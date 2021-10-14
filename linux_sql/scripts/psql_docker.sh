@@ -49,6 +49,7 @@ case $cmd in
 
   *)
 
+  # Print error message if command is invalid
   echo 'Illegal command'
   echo 'Commands: start|stop|create'
   exit 1

@@ -13,10 +13,6 @@ if [ $# -ne 5 ]; then
   exit 1
 fi
 
-# Run ddl.sql script to create tables
-#cd /home/centos/dev/jarvis_data_eng_Josh/linux_sql/scripts
-#./ddl.sql start
-
 # Create variables to store commands for hardware specifications
 lscpu_out=$(lscpu)
 mem_info=$(cat /proc/meminfo)

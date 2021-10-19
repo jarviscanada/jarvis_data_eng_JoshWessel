@@ -13,13 +13,13 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
 
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
 (
-    host_id        SERIAL NOT NULL,
-    memory_free    NUMERIC NOT NULL,
-    cpu_idle       INT NOT NULL,
-    cpu_kernel     INT NOT NULL,
-    disk_io        INT NOT NULL,
-    disk_available INT NOT NULL,
-    timestamp_     TIMESTAMP NOT NULL,
+    host_id          SERIAL NOT NULL,
+    memory_free      NUMERIC NOT NULL,
+    cpu_idle         INT NOT NULL,
+    cpu_kernel       INT NOT NULL,
+    disk_io          INT NOT NULL,
+    disk_available   INT NOT NULL,
+    timestamp_       TIMESTAMP NOT NULL,
 
     FOREIGN KEY (host_id) REFERENCES host_info (id)
 );

@@ -30,7 +30,7 @@ disk_io=$(echo "$disk_info2" | egrep "[0|1]" | awk '{print $10}' | xargs)
 disk_available=$(echo "$disk_info3" | egrep "^/dev/sda" | awk '{print $4}' | xargs | rev | cut -c2- | rev)
 timestamp2=$(date '+%F %H:%M:%S')
 
-# Save password
+# Save password as an environment variable
 export PGPASSWORD=$psql_password
 
 # Insert data into the host_usage table

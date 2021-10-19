@@ -27,7 +27,7 @@ l2_cache2=$(echo "$lscpu_out" | egrep "^L2 cache:" | awk '{$0=substr($0,1,length
 total_mem2=$(echo "$mem_info" | egrep "^MemTotal:" | awk '{print $2}' | xargs)
 timestamp2=$(date '+%F %H:%M:%S')
 
-# Save password
+# Save password as an environment variable
 export PGPASSWORD=$psql_password
 
 # Insert data into the host_info table

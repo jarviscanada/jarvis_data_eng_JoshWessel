@@ -176,15 +176,29 @@ The schema for each table can be found below (filled with sample data).
 
 `host_info` schema
 
- id | hostname | cpu_number | cpu_architecture | cpu_model | cpu_mhz | l2_cache | total_mem | timestamp |
---- | -------- | ---------- | ---------------- | --------- | ------- | -------- | --------- | --------- |
- 1 | jrvs-remote-desktop | 2 | x86_64 | Intel(R) | 2200 | 256 | 8000000 | 2021-10-18 13:57:20 |
+Field Name | Data Type |
+---------- | --------- |
+id | SERIAL INT |
+hostname | VARCHAR |
+cpu_number | INT |
+cpu_architecture | VARCHAR |
+cpu_model | VARCHAR |
+cpu_mhz | INT |
+l2_cache | INT |
+total_mem | INT |
+timestamp_ | TIMESTAMP |
 
 `host_usage` schema
 
- host_id | memory_free | cpu_idle | cpu_kernel | disk_io | disk_available | timestamp |
--------- | ----------- | -------- | ---------- | ------- | -------------- | --------- |
- 1 | 3000 | 95 | 0 | 0 | 24000 | 2021-10-18 13:57:20 |
+Field Name | Data Type |
+---------- | --------- |
+host_id | SERIAL INT |
+memory_free | NUMERIC |
+cpu_idle | INT |
+cpu_kernel | INT |
+disk_io | INT |
+disk_available | INT |
+timestamp_ | TIMESTAMP |
 
 # Test
 

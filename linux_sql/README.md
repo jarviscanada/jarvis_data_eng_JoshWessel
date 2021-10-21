@@ -172,7 +172,7 @@ The `queries.sql` script is used to address three questions regarding the hardwa
 The project uses two tables within the PSQL database.
 The first table stores the hardware specifications of the host device.
 The second table stores various usage statistics of the host device.
-The schema for each table can be found below (filled with sample data).
+The schema for each table can be found below.
 
 `host_info` schema
 

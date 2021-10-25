@@ -4,6 +4,7 @@ SELECT
   id AS host_id,
   total_mem AS total_memory
 FROM host_info
+GROUP BY id
 ORDER BY total_memory DESC;
 
 -- 2. Average memory usage

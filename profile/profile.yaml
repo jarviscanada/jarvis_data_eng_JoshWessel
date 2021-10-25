@@ -1,36 +1,34 @@
 # Preferred name (Characters only)
 name: "Josh Wessel"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_demo
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+summary:
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
   # At least 5 skills
   proficient:
-    - Java
-    - Linux/Bash
-    - RDBMS/SQL
+    - C++
+    - Object Oriented Programming
     - Agile/Scrum
-    - Git
+    -
+    -
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Linux/Bash
+    - RDBMS/SQL
+    - Visual Studio
+    - RStudio
+    - Git
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - R
+    - C#
+    -
 
 # List of Jarvis projects
 jarvis_projects:
@@ -81,7 +79,7 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2021-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
   - title: "Tutor"
@@ -91,20 +89,15 @@ professional_experience:
 
 #List of edcuation
 education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
+  - school_name: "Ontario Tech University"
+    duration: "2017-2021"
+    degree: "Bachelor of Information Technology"
+    department: "Game Development And Entrepreneurship"
     # optional
     awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements: 
+      - "Ontario Tech University Entry Scholarship for averaging 90% to 95% in top 6 high school courses"
+      - "Dean's List (2020-2021)"
+      - "GPA: 3.05/4.0"
 
 #Optional section
 others:
@@ -120,4 +113,4 @@ others:
     bullets:
       - "Basketball player"
       - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Volunteer, ABC Food bank"

@@ -1,64 +1,68 @@
 # Josh Wessel . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+Hello, my name is Josh Wessel. I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship. For the three summers from 2018-2020, I worked as an Environmental Intern; the first two summers for Sustainable Cobourg, and the third summer for the Township of Hamilton. My responsibilities included research, data collection, data entry, and data visualization. I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** C++, Object Oriented Programming, Visual Studio, Unity Game Engine, Agile/Scrum
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** Linux/Bash, RDBMS/SQL, Git, C#, R, tidyverse
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Docker, PostgreSQL, RStudio, GitKraken, Tableau
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](https://github.com/jarviscanada/jarvis_data_eng_demo)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JoshWessel](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql)]: Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database. The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs. Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active. Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]:
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - Twitter App: 
+  - JDBC App: 
+  - Grep App: 
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/springboot)]: Not Started
+**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/springboot)]: Not Started
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/python_data_anlytics)]: Not Started
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/python_data_analytics)]: Not Started
 
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/hadoop)]: Not Started
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/hadoop)]: Not Started
 
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/spark)]: Not Started
+**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/spark)]: Not Started
 
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/cloud_devops)]: Not Started
+**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/cloud_devops)]: Not Started
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Babsketball (2021)**: Developed a text-based basketball simulation game featuring an assortment of mistake-prone players called Babduls. The program is written using C++ in Visual Studio and uses object-oriented programming.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Firefighter Simulator (2020)**: Developed a first-person firefighting simulator where the user controls a firefighter and must extinguish all fires in a burning building. The simulation is built in the Unity game engine and uses C# scripts.
+
+**Defleation (2018)**: Developed a top-down side scroller game written using C++ and the Cocos2d-x game engine in Visual Studio.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Developer, Jarvis (2021-Present)**: Developed applications using languages such as bash, SQL, Java, and Python, as well as software such as Google Cloud Platform, Docker, and Java Microservices to gain experience in data engineering.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Environmental Intern, Sustainable Cobourg (2018-2019 (Summers))**: Summer position as an environmental intern working for Sustainable Cobourg. My specific responsibilities included research, data collection, data entry, creating charts and graphs. Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions (in the second summer).
+
+**Environmental Intern, Sustainable Cobourg (2020 (Summer))**: Summer position as an environmental intern working for Hamilton Township. My specific responsibilities included research, data collection, data entry, creating charts and graphs, and survey creation. Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
-
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**Ontario Tech University (2017-2021)**, Bachelor of Information Technology, Game Development And Entrepreneurship
+- Ontario Tech University Entry Scholarship for averaging 90% to 95% in top 6 high school courses
+- Dean's List (2020-2021)
+- GPA: 3.05/4.0
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Received multiple certificates of high honours from St. Mary Secondary School (2014-2017)
+- Dean's List (2020-2021)
+- Rotary Club of Northumberland Sunrise Scholarship for high academic standing
+- Basketball fan
+- Playing video games
+- Developing video games
+- Maintaining a music spreadsheet

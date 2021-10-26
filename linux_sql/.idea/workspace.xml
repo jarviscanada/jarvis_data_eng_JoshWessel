@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00d4289d-6e1b-4fee-91c4-4f6ef31eaf61" name="Changes" comment="" />
+    <list default="true" id="00d4289d-6e1b-4fee-91c4-4f6ef31eaf61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../profile/profile.yaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1zSp78zkAP9Tg1SRwgzst2Hm7lh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,9 +39,13 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="PostgreSQL&#10;Redshift" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Shell Script" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../profile/profile.yaml" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/src.zip" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.splitter.proportion" value="0.2955665" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -75,6 +85,11 @@
       <workItem from="1634846011433" duration="904000" />
       <workItem from="1634847056995" duration="141000" />
       <workItem from="1634934429469" duration="3090000" />
+      <workItem from="1635202468892" duration="735000" />
+      <workItem from="1635258530216" duration="296000" />
+      <workItem from="1635258993221" duration="336000" />
+      <workItem from="1635259379854" duration="429000" />
+      <workItem from="1635265596587" duration="1184000" />
     </task>
     <servers />
   </component>

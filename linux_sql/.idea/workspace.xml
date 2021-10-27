@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00d4289d-6e1b-4fee-91c4-4f6ef31eaf61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core_java/grep/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../core_java/grep/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +22,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../profile/profile.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zSp78zkAP9Tg1SRwgzst2Hm7lh" />
@@ -39,11 +40,11 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="PostgreSQL&#10;Redshift" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Shell Script" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/src.zip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../core_java/grep/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="settings.editor.splitter.proportion" value="0.2955665" />
   </component>
@@ -89,7 +90,9 @@
       <workItem from="1635258530216" duration="296000" />
       <workItem from="1635258993221" duration="336000" />
       <workItem from="1635259379854" duration="429000" />
-      <workItem from="1635265596587" duration="1184000" />
+      <workItem from="1635265596587" duration="1791000" />
+      <workItem from="1635343273891" duration="692000" />
+      <workItem from="1635344022308" duration="34000" />
     </task>
     <servers />
   </component>

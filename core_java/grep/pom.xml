@@ -1,9 +1,7 @@
-
-
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupID>ca.jrvs.apps</groupID>
-  <artifactID>grep</artifactID>
+  <groupId>ca.jrvs.apps</groupId>
+  <artifactId>grep</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <dependency>

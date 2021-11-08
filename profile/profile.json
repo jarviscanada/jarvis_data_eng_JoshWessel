@@ -1,0 +1,141 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Ontario Tech University Entry Scholarship for averaging 90% to 95% in top 6 high school courses",
+        "Dean's List (2020-2021)",
+        "GPA: 3.05/4.0"
+      ],
+      "degree": "Bachelor of Information Technology",
+      "department": "Game Development And Entrepreneurship",
+      "duration": "2017-2021",
+      "school_name": "Ontario Tech University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel",
+  "highlighted_projects": [
+    {
+      "description": "Developed a text-based basketball simulation game featuring an assortment of mistake-prone players called Babduls. The program is written using C++ in Visual Studio and uses object-oriented programming.",
+      "name": "Babsketball (2021)"
+    },
+    {
+      "description": "Developed a first-person firefighting simulator where the user controls a firefighter and must extinguish all fires in a burning building. The simulation is built in the Unity game engine and uses C# scripts.",
+      "name": "Firefighter Simulator (2020)"
+    },
+    {
+      "description": "Developed a top-down side scroller game written using C++ and the Cocos2d-x game engine in Visual Studio.",
+      "name": "Defleation (2018)"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database. The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs. Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active. Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database.",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: ",
+        "JDBC App: ",
+        "Grep App: "
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_analytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Josh Wessel",
+  "others": [
+    {
+      "bullets": [
+        "Received multiple certificates of high honours from St. Mary Secondary School (2014-2017)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Dean's List (2020-2021)",
+        "Rotary Club of Northumberland Sunrise Scholarship for high academic standing"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Basketball fan",
+        "Playing video games",
+        "Developing video games",
+        "Maintaining a music spreadsheet"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Developed applications using languages such as bash, SQL, Java, and Python, as well as software such as Google Cloud Platform, Docker, and Java Microservices to gain experience in data engineering.",
+      "duration": "2021-Present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Sustainable Cobourg",
+      "description": "Summer position as an environmental intern working for Sustainable Cobourg. My specific responsibilities included research, data collection, data entry, creating charts and graphs. Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions (in the second summer).",
+      "duration": "2018-2019 (Summers)",
+      "title": "Environmental Intern"
+    },
+    {
+      "company": "Sustainable Cobourg",
+      "description": "Summer position as an environmental intern working for Hamilton Township. My specific responsibilities included research, data collection, data entry, creating charts and graphs, and survey creation. Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions.",
+      "duration": "2020 (Summer)",
+      "title": "Environmental Intern"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Git",
+      "C#",
+      "R",
+      "tidyverse"
+    ],
+    "familiar": [
+      "Docker",
+      "PostgreSQL",
+      "RStudio",
+      "GitKraken",
+      "Tableau"
+    ],
+    "proficient": [
+      "C++",
+      "Object Oriented Programming",
+      "Visual Studio",
+      "Unity Game Engine",
+      "Agile/Scrum"
+    ]
+  },
+  "summary": "Hello, my name is Josh Wessel. I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship. For the three summers from 2018-2020, I worked as an Environmental Intern; the first two summers for Sustainable Cobourg, and the third summer for the Township of Hamilton. My responsibilities included research, data collection, data entry, and data visualization. I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry."
+}

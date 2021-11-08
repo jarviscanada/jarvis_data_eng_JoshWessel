@@ -1,0 +1,142 @@
+# Preferred name (Characters only)
+name: "Josh Wessel"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "Hello, my name is Josh Wessel. I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship.
+          For the three summers from 2018-2020, I worked as an Environmental Intern; the first two summers for Sustainable Cobourg, and the third summer for the Township of Hamilton.
+          My responsibilities included research, data collection, data entry, and data visualization.
+          I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry."
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - C++
+    - Object Oriented Programming
+    - Visual Studio
+    - Unity Game Engine
+    - Agile/Scrum
+  # At least 5 skills
+  competent:
+    - Linux/Bash
+    - RDBMS/SQL
+    - Git
+    - C#
+    - R
+    - tidyverse
+  # At least 5 skills
+  familiar:
+    - Docker
+    - PostgreSQL
+    - RStudio
+    - GitKraken
+    - Tableau
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database.
+                  The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs.
+                  Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active.
+                  Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database."
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: "
+      - "JDBC App: "
+      - "Grep App: "
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_analytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+  #project name
+  # - name: "Web app for resturant"
+  #URL is optional
+  #   git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+  # The project description must start with an action verb (https://bit.ly/3guO98u)
+  - name: "Babsketball (2021)"
+    description: "Developed a text-based basketball simulation game featuring an assortment of mistake-prone players called Babduls.
+                  The program is written using C++ in Visual Studio and uses object-oriented programming."
+  - name: "Firefighter Simulator (2020)"
+    description: "Developed a first-person firefighting simulator where the user controls a firefighter and must extinguish all fires in a burning building.
+                  The simulation is built in the Unity game engine and uses C# scripts."
+  - name: "Defleation (2018)"
+    description: "Developed a top-down side scroller game written using C++ and the Cocos2d-x game engine in Visual Studio."
+
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2021-Present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed applications using languages such as bash, SQL, Java, and Python,
+                  as well as software such as Google Cloud Platform, Docker, and Java Microservices to gain experience in data engineering."
+  - title: "Environmental Intern"
+    company: "Sustainable Cobourg"
+    duration: "2018-2019 (Summers)"
+    description: "Summer position as an environmental intern working for Sustainable Cobourg.
+                  My specific responsibilities included research, data collection, data entry, creating charts and graphs.
+                  Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions (in the second summer)."
+  - title: "Environmental Intern"
+    company: "Sustainable Cobourg"
+    duration: "2020 (Summer)"
+    description: "Summer position as an environmental intern working for Hamilton Township.
+                  My specific responsibilities included research, data collection, data entry, creating charts and graphs, and survey creation.
+                  Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions."
+
+
+#List of education
+education:
+  - school_name: "Ontario Tech University"
+    duration: "2017-2021"
+    degree: "Bachelor of Information Technology"
+    department: "Game Development And Entrepreneurship"
+    # optional
+    awards_achievements:
+      - "Ontario Tech University Entry Scholarship for averaging 90% to 95% in top 6 high school courses"
+      - "Dean's List (2020-2021)"
+      - "GPA: 3.05/4.0"
+
+#Optional section
+others:
+  #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Received multiple certificates of high honours from St. Mary Secondary School (2014-2017)"
+  - title: "Awards"
+    bullets:
+      - "Dean's List (2020-2021)"
+      - "Rotary Club of Northumberland Sunrise Scholarship for high academic standing"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Basketball fan"
+      - "Playing video games"
+      - "Developing video games"
+      - "Maintaining a music spreadsheet"

@@ -1,13 +1,15 @@
 package ca.jrvs.apps.grep;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.stream.Stream;
+import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -22,7 +24,7 @@ public class JavaGrepImp implements JavaGrep {
   private String rootPath;
   private String outFile;
 
-  List<File> files = new ArrayList<File>();
+  //List<File> files = new ArrayList<>();
 
   /**
    * Top level search workflow
@@ -31,44 +33,65 @@ public class JavaGrepImp implements JavaGrep {
    */
   @Override
   public void process() throws IOException {
-    List<String> matchedLines = new ArrayList<String>();
-    for (File file : listFiles(rootPath)) {
-      for (String line : readLines(file)) {
-        if (containsPattern(line)) {
-          matchedLines.add(line);
-        }
+
+    Stream<File> allFiles = listFiles(rootPath);
+
+    final Stream<String> allMatchedLines;
+
+    allFiles.forEach(file -> {
+      try {
+        Stream<String> matchedLines = readLines(file).filter(this::containsPattern);
+        matchedLines.forEach(System.out::println);
+        allMatchedLines = Stream.concat(allMatchedLines, matchedLines);
+      } catch (IOException e) {
+        e.printStackTrace();
       }
-    }
-    writeToFile(matchedLines);
+    });
+
+    writeToFile(allMatchedLines);
+
+
+
+
+//    List<String> matchedLines = new ArrayList<>();
+//    for (File file : listFiles(rootPath)) {
+//      for (String line : readLines(file)) {
+//        if (containsPattern(line)) {
+//          matchedLines.add(line);
+//        }
+//      }
+//    }
+//    writeToFile(matchedLines);
   }
 
   /**
    * Traverse a given directory and return all files
    *
+   * Source: https://stackoverflow.com/questions/4917326/how-to-iterate-over-the-files-of-a-certain-directory-in-java/4917347
+   *
+   * New Sources: https://stackoverflow.com/questions/55555030/is-there-a-way-to-convert-the-results-of-stream-into-array-and-iterate-through-a
+   *
    * @param rootDir
    * @return
    */
   @Override
-  public List<File> listFiles(String rootDir) throws IOException {
-    listFilesRecursively(rootDir);
-    return files;
-  }
+  public Stream<File> listFiles(String rootDir) {
 
-  /**
-   * Source: https://stackoverflow.com/a/24324367
-   * @param rootDir
-   * @throws IOException
-   */
-  private void listFilesRecursively(String rootDir) throws IOException {
-    DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(rootDir));
-    for (Path path : stream) {
-      if (path.toFile().isDirectory()) {
-        listFilesRecursively(path.toString());
-      }
-      else {
-        files.add(path.toFile());
-      }
-    }
+    File dir = new File(rootDir);
+    return Arrays.stream(Objects.requireNonNull(dir.listFiles())).filter(File::isFile);
+
+//    files.clear();
+//
+//    File dir = new File(rootDir);
+//    File[] directoryListing = dir.listFiles();
+//    if (directoryListing != null) {
+//      for (File child : directoryListing) {
+//        if (child.isFile()) {
+//          files.add(child);
+//        }
+//      }
+//    }
+//    return files;
   }
 
   /**
@@ -82,14 +105,17 @@ public class JavaGrepImp implements JavaGrep {
    * @return
    */
   @Override
-  public List<String> readLines(File inputFile) throws IOException {
-    List<String> lines = new ArrayList<String>();
-    BufferedReader in = new BufferedReader(new FileReader(inputFile));
-    String str;
-    while ((str = in.readLine()) != null) {
-      lines.add(str);
-    }
-    return lines;
+  public Stream<String> readLines(File inputFile) throws IllegalArgumentException, IOException {
+
+    return Files.lines(inputFile.toPath());
+
+//    List<String> lines = new ArrayList<String>();
+//    BufferedReader in = new BufferedReader(new FileReader(inputFile));
+//    String str;
+//    while ((str = in.readLine()) != null) {
+//      lines.add(str);
+//    }
+//    return lines;
   }
 
   /**
@@ -118,10 +144,17 @@ public class JavaGrepImp implements JavaGrep {
    * @throws IOException
    */
   @Override
-  public void writeToFile(List<String> lines) throws IOException {
+  public void writeToFile(Stream<String> lines) throws IOException {
     FileWriter writer = new FileWriter(outFile);
-    for (String str : lines)
-      writer.write(str + System.lineSeparator());
+    lines.forEach(str -> {
+      try {
+        writer.write(System.lineSeparator() + str + System.lineSeparator());
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    });
+//    for (String str : lines)
+//      writer.write(str + System.lineSeparator());
     writer.close();
   }
 
@@ -159,6 +192,8 @@ public class JavaGrepImp implements JavaGrep {
     if (args.length != 3) {
       throw new IllegalArgumentException("Usage: JavaGrep [regex] [rootPath] [outFile]");
     }
+
+    BasicConfigurator.configure();
 
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);

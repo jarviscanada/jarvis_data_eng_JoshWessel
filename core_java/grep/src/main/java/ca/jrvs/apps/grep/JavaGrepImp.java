@@ -1,17 +1,14 @@
 package ca.jrvs.apps.grep;
 
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.util.Arrays;
-import java.util.Objects;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.stream.Stream;
 import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.*;
@@ -24,8 +21,6 @@ public class JavaGrepImp implements JavaGrep {
   private String rootPath;
   private String outFile;
 
-  //List<File> files = new ArrayList<>();
-
   /**
    * Top level search workflow
    *
@@ -36,62 +31,32 @@ public class JavaGrepImp implements JavaGrep {
 
     Stream<File> allFiles = listFiles(rootPath);
 
-    final Stream<String> allMatchedLines;
-
     allFiles.forEach(file -> {
       try {
         Stream<String> matchedLines = readLines(file).filter(this::containsPattern);
-        matchedLines.forEach(System.out::println);
-        allMatchedLines = Stream.concat(allMatchedLines, matchedLines);
+        writeToFile(matchedLines);
       } catch (IOException e) {
         e.printStackTrace();
       }
     });
-
-    writeToFile(allMatchedLines);
-
-
-
-
-//    List<String> matchedLines = new ArrayList<>();
-//    for (File file : listFiles(rootPath)) {
-//      for (String line : readLines(file)) {
-//        if (containsPattern(line)) {
-//          matchedLines.add(line);
-//        }
-//      }
-//    }
-//    writeToFile(matchedLines);
   }
 
   /**
    * Traverse a given directory and return all files
    *
-   * Source: https://stackoverflow.com/questions/4917326/how-to-iterate-over-the-files-of-a-certain-directory-in-java/4917347
-   *
-   * New Sources: https://stackoverflow.com/questions/55555030/is-there-a-way-to-convert-the-results-of-stream-into-array-and-iterate-through-a
+   * Source: https://howtodoinjava.com/java8/java-8-list-all-files-example/, https://stackoverflow.com/questions/1844688/how-to-read-all-files-in-a-folder-from-java
    *
    * @param rootDir
    * @return
    */
   @Override
-  public Stream<File> listFiles(String rootDir) {
-
-    File dir = new File(rootDir);
-    return Arrays.stream(Objects.requireNonNull(dir.listFiles())).filter(File::isFile);
-
-//    files.clear();
-//
-//    File dir = new File(rootDir);
-//    File[] directoryListing = dir.listFiles();
-//    if (directoryListing != null) {
-//      for (File child : directoryListing) {
-//        if (child.isFile()) {
-//          files.add(child);
-//        }
-//      }
-//    }
-//    return files;
+  public Stream<File> listFiles(String rootDir) throws IOException {
+    return Files.walk(Paths.get(rootDir))
+        .filter(path -> !path.toString().endsWith(".jar"))
+        .filter(path -> !path.toString().endsWith(".class"))
+        .filter(path -> !path.toString().endsWith(outFile))
+        .filter(Files::isRegularFile)
+        .map(Path::toFile);
   }
 
   /**
@@ -106,16 +71,7 @@ public class JavaGrepImp implements JavaGrep {
    */
   @Override
   public Stream<String> readLines(File inputFile) throws IllegalArgumentException, IOException {
-
     return Files.lines(inputFile.toPath());
-
-//    List<String> lines = new ArrayList<String>();
-//    BufferedReader in = new BufferedReader(new FileReader(inputFile));
-//    String str;
-//    while ((str = in.readLine()) != null) {
-//      lines.add(str);
-//    }
-//    return lines;
   }
 
   /**
@@ -138,23 +94,21 @@ public class JavaGrepImp implements JavaGrep {
    * <p>
    * Explore: FileOutPutStream, OutputStreamWriter, and BufferedWriter
    *
-   * Source: https://stackoverflow.com/questions/6548157/how-to-write-an-arraylist-of-strings-into-a-text-file/6548204#6548204
+   * Source: https://stackoverflow.com/questions/6548157/how-to-write-an-arraylist-of-strings-into-a-text-file/6548204#6548204, https://newbedev.com/write-to-text-file-without-overwriting-in-java
    *
    * @param lines
    * @throws IOException
    */
   @Override
   public void writeToFile(Stream<String> lines) throws IOException {
-    FileWriter writer = new FileWriter(outFile);
+    FileWriter writer = new FileWriter(outFile, true);
     lines.forEach(str -> {
       try {
-        writer.write(System.lineSeparator() + str + System.lineSeparator());
+        writer.write(str + System.lineSeparator());
       } catch (IOException e) {
         e.printStackTrace();
       }
     });
-//    for (String str : lines)
-//      writer.write(str + System.lineSeparator());
     writer.close();
   }
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d79601a2-ef4e-48a1-b928-49e02c8c8482" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/grep/JavaGrep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/grep/JavaGrep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/grep/JavaGrep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/grep/JavaGrep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/grep/JavaGrepImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/grep/JavaGrepImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/grep/RegexExc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/grep/RegexExcImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/ArrayJList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/ArrayListAPIs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/ComparableComparatorPractice$Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/ComparableComparatorPractice$EmployeeComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/ComparableComparatorPractice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/HashJMap$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/HashJMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/HashJSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JBSTree$Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JBSTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JBSTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JDeque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/JTreeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/LambdaStreamExc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/LambdaStreamExcImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/LinkedJList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/LinkedJList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/LinkedJListJDeque$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/jrvs/apps/practice/LinkedJListJDeque.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="20hIEHUbfZ64WU3yN7mhvds4S9M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="grep" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImp" />
+      <module name="grep" />
+      <option name="PROGRAM_PARAMETERS" value=".*To.*be.*or.*not.*to.*be.* $PROJECT_DIR$ $PROJECT_DIR$/out/test.out" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d79601a2-ef4e-48a1-b928-49e02c8c8482" name="Changes" comment="" />
+      <created>1636490280842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636490280842</updated>
+      <workItem from="1636490282828" duration="6555000" />
+      <workItem from="1636553544905" duration="9460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

@@ -5,9 +5,14 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: "Hello, my name is Josh Wessel. I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship.
+summary: "I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship.
+          During my time at university, I learned languages such as C++, C#, and R, using IDE's such as Visual Studio and RStudio.
+          I was introduced to concepts such as object oriented programming, user research and algorithms & data structures.
+          I used source control tools such as Git, GitHub, and GitKraken, and other collaboration tools such as Discord & Trello.
+          I was also given the opportunity to use the agile framework in the form of daily scrum meetings.
           For the three summers from 2018-2020, I worked as an Environmental Intern; the first two summers for Sustainable Cobourg, and the third summer for the Township of Hamilton.
           My responsibilities included research, data collection, data entry, and data visualization.
+          These summer positions also provided opportunities for me to develop my organization, communication, and time management skills.
           I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry."
 
 # Group your skills by level.
@@ -15,11 +20,11 @@ summary: "Hello, my name is Josh Wessel. I graduated from Ontario Tech Universit
 skills:
   # At least 5 skills
   proficient:
+    - Java
+    - Agile/Scrum
     - C++
     - Object Oriented Programming
     - Visual Studio
-    - Unity Game Engine
-    - Agile/Scrum
   # At least 5 skills
   competent:
     - Linux/Bash
@@ -47,26 +52,31 @@ jarvis_projects:
                   Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active.
                   Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database."
   - name: "Core Java Apps"
-    git_url: "/core_java"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java"
     description:
       - "Twitter App: "
       - "JDBC App: "
-      - "Grep App: "
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_analytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
+      - "Grep App: Developed an application that searches all files within a given directory for all lines that match a given pattern, writing all matches to a given output location.
+                   The application requires the user to supply three parameters.
+                   These parameters include a pattern to search for, the search directory, and the output file to store all matched lines.
+                   The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests.
+                   IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory.
+                   The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub."
+#  - name: "Springboot App"
+#    git_url: "/springboot"
+#    description: ""
+#  - name: "Python Data Analytics"
+#    git_url: "/python_data_analytics"
+#    description: ""
+#  - name: "Hadoop"
+#    git_url: "/hadoop"
+#    description: ""
+#  - name: "Spark"
+#    git_url: "/spark"
+#    description: ""
+#  - name: "Cloud/DevOps"
+#    git_url: "/cloud_devops"
+#    description: ""
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -77,7 +87,8 @@ highlighted_projects:
   #   git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
   # The project description must start with an action verb (https://bit.ly/3guO98u)
   - name: "Babsketball (2021)"
-    description: "Developed a text-based basketball simulation game featuring an assortment of mistake-prone players called Babduls.
+    git_url: "https://github.com/JoshWessel/Babsketball"
+    description: "Developed a text-based basketball simulation game featuring an assortment of mistake-prone basketball players called Babduls.
                   The program is written using C++ in Visual Studio and uses object-oriented programming."
   - name: "Firefighter Simulator (2020)"
     description: "Developed a first-person firefighting simulator where the user controls a firefighter and must extinguish all fires in a burning building.
@@ -95,20 +106,28 @@ professional_experience:
     company: "Jarvis"
     duration: "2021-Present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Developed applications using languages such as bash, SQL, Java, and Python,
-                  as well as software such as Google Cloud Platform, Docker, and Java Microservices to gain experience in data engineering."
+    description: "Developed applications using languages such as bash, SQL, and Java,
+                  as well as software such as Google Cloud Platform, IntelliJ, Maven, and Docker to gain experience in data engineering.
+                  Used agile framework (daily scrum meetings and bi-weekly sprint retrospective meetings) to complete projects."
   - title: "Environmental Intern"
     company: "Sustainable Cobourg"
     duration: "2018-2019 (Summers)"
     description: "Summer position as an environmental intern working for Sustainable Cobourg.
-                  My specific responsibilities included research, data collection, data entry, creating charts and graphs.
-                  Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions (in the second summer)."
+                  My responsibilities included research, data collection, data entry, and creating charts and graphs.
+                  Technologies used include Google Suite, Microsoft Office, and a web-based framework that functioned as a database, in which I performed data entry (in the second summer).
+                  Working alone allowed me the opportunity to improve my time management skills.
+                  I was often given a list of tasks and then left to complete them myself, allowing me the opportunity to practice effective time management.
+                  I was also able to use my organizational skills while working with a large number of files and folders on a daily basis."
   - title: "Environmental Intern"
-    company: "Sustainable Cobourg"
+    company: "Hamilton Township"
     duration: "2020 (Summer)"
     description: "Summer position as an environmental intern working for Hamilton Township.
                   My specific responsibilities included research, data collection, data entry, creating charts and graphs, and survey creation.
-                  Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions."
+                  Technologies used include Google Suite, Microsoft Office, and a web-based framework that functioned as a database, in which I performed data entry.
+                  This position was entirely remote, which allowed me to develop my communication skills using communication tools such as email and zoom.
+                  Working alone also allowed me the opportunity to improve my time management skills.
+                  I was often given a list of tasks and then left to complete them myself, allowing me the opportunity to practice effective time management.
+                  I was also able to use my organizational skills while working with a large number of files and folders on a daily basis."
 
 
 #List of education
@@ -121,22 +140,18 @@ education:
     awards_achievements:
       - "Ontario Tech University Entry Scholarship for averaging 90% to 95% in top 6 high school courses"
       - "Dean's List (2020-2021)"
-      - "GPA: 3.05/4.0"
 
 #Optional section
 others:
   #category
-  - title: "Certificates"
-    #list of items
-    bullets:
-      - "Received multiple certificates of high honours from St. Mary Secondary School (2014-2017)"
+#  - title: "Certificates"
+#    #list of items
+#    bullets:
+#      - "Received multiple certificates of high honours from St. Mary Secondary School (2014-2017)"
   - title: "Awards"
     bullets:
       - "Dean's List (2020-2021)"
       - "Rotary Club of Northumberland Sunrise Scholarship for high academic standing"
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball fan"
-      - "Playing video games"
       - "Developing video games"
-      - "Maintaining a music spreadsheet"

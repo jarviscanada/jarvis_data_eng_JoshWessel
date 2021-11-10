@@ -9,8 +9,5 @@
         <module name="grep" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="grep" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

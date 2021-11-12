@@ -18,7 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>ca.jrvs.apps.jdbc.placeholder</mainClass>
+                  <mainClass>ca.jrvs.apps.jdbc.JDBCExecutor</mainClass>
                 </transformer>
               </transformers>
             </configuration>

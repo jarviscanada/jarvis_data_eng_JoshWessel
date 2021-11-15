@@ -1,0 +1,24 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Jarvis Additions
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+.idea/
+.eclipse
+# My Additions
+/core_java/.idea/
+/core_java/grep/target/
+/core_java/grep/.idea/
+/core_java/jdbc/target/
+/core_java/jdbc/.idea/

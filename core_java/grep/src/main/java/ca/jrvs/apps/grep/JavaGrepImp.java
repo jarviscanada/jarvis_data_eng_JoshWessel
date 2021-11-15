@@ -42,7 +42,7 @@ public class JavaGrepImp implements JavaGrep {
         Stream<String> matchedLines = readLines(file).filter(this::containsPattern);
         writeToFile(matchedLines);
       } catch (IOException e) {
-        e.printStackTrace();
+        throw new RuntimeException("Failed to find matched lines or write to file", e);
       }
     });
   }
@@ -112,7 +112,7 @@ public class JavaGrepImp implements JavaGrep {
       try {
         writer.write(str + System.lineSeparator());
       } catch (IOException e) {
-        e.printStackTrace();
+        throw new RuntimeException("Failed to write to file", e);
       }
     });
     writer.close();

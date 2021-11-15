@@ -31,65 +31,53 @@ The `JavaGrepImp` class implements all methods declared in the interface.
 Pseudocode for key methods can be found below.
 
 **process**
-```java
-// This method groups all methods required for the application into a single method. It is the only method called in main.
-// Params: None
-// 1. Create a stream containing all files
-// 2. For each file in the stream:
-//    - Create a stream containing all lines in the file, filtered to match the given pattern
-//    - Write the matched lines to the specified output file
-// Returns void
-```
+This method groups all methods required for the application into a single method. It is the only method called in main.
+Params: None
+1. Create a stream containing all files
+2. For each file in the stream:
+   - Create a stream containing all lines in the file, filtered to match the given pattern
+   - Write the matched lines to the specified output file
+Returns void
 
 **listFiles**
-```java
-// This method traverses the given directory and returns a stream containing all files
-// Params: String rootDir
-// 1. Return a stream of files from the given directory, while filtering out all files that meet the following criteria:
-//    - All files ending with ".jar"
-//    - All files ending with ".class"
-//    - The specified output file
-// Returns Stream<File>
-```
+This method traverses the given directory and returns a stream containing all files
+Params: String rootDir
+1. Return a stream of files from the given directory, while filtering out all files that meet the following criteria:
+   - All files ending with ".jar"
+   - All files ending with ".class"
+   - The specified output file
+Returns Stream<File>
 
 **readLines**
-```java
-// This method reads the given file and returns a stream containing all lines within the file
-// Params: File inputFile
-// 1. Return a stream of Strings from the given input file
-// Returns Stream<String>
-```
+This method reads the given file and returns a stream containing all lines within the file
+Params: File inputFile
+1. Return a stream of Strings from the given input file
+Returns Stream<String>
 
 **containsPattern**
-```java
-// This method reads the given line and returns a boolean that represents whether or not the given line contains the given pattern
-// Params: String line
-// 1. Create a Pattern object based on the given regex pattern
-// 2. Create a Matcher object based on the given line
-// 3. Return a boolean representing whether or not the given line contains the given pattern
-// Returns boolean
-```
+This method reads the given line and returns a boolean that represents whether or not the given line contains the given pattern
+Params: String line
+1. Create a Pattern object based on the given regex pattern
+2. Create a Matcher object based on the given line
+3. Return a boolean representing whether or not the given line contains the given pattern
+Returns boolean
 
 **writeToFile**
-```java
-// This method writes all lines from the given Stream of Strings and writes each line to the given output file
-// Params: Stream<String> lines
-// 1. Create a FileWriter object to append the given output file
-// 2. For each String in the Stream, write the String in the given output file, followed by a new line
-// 3. Close the FileWriter object
-// Returns void
-```
+This method writes all lines from the given Stream of Strings and writes each line to the given output file
+Params: Stream<String> lines
+1. Create a FileWriter object to append the given output file
+2. For each String in the Stream, write the String in the given output file, followed by a new line
+3. Close the FileWriter object
+Returns void
 
 **main**
-```java
-// The main method is used to accept parameters from the command line and run the application
-// Params: String[] args
-// 1. Ensure there are exactly 3 arguments
-// 2. Create a JavaGrepImp object
-// 3. Set JavaGrepImp object member variables to given parameters
-// 4. Call JavaGrepImp objects process() method (see process method above)
-// Returns void
-```
+The main method is used to accept parameters from the command line and run the application
+Params: String[] args
+1. Ensure there are exactly 3 arguments
+2. Create a JavaGrepImp object
+3. Set JavaGrepImp object member variables to given parameters
+4. Call JavaGrepImp objects process() method (see process method above)
+Returns void
 
 ## Performance Issue
 

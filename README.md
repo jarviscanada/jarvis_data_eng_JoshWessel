@@ -1,14 +1,14 @@
 # Josh Wessel . Jarvis Consulting
 
-Hello, my name is Josh Wessel. I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship. For the three summers from 2018-2020, I worked as an Environmental Intern; the first two summers for Sustainable Cobourg, and the third summer for the Township of Hamilton. My responsibilities included research, data collection, data entry, and data visualization. I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry.
+I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship. During my time at university, I learned languages such as C++, C#, and R, using IDE's such as Visual Studio and RStudio. I was introduced to concepts such as object oriented programming, user research and algorithms & data structures. I used source control tools such as Git, GitHub, and GitKraken, and other collaboration tools such as Discord & Trello. I was also given the opportunity to use the agile framework in the form of daily scrum meetings. For the three summers from 2018-2020, I worked as a summer intern for Sustainable Cobourg (2018, 2019), and the Township of Hamilton (2020). My responsibilities included research, data collection, data entry, and data visualization. These summer positions also provided opportunities for me to develop my organization, communication, and time management skills. I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry.
 
 ## Skills
 
-**Proficient:** C++, Object Oriented Programming, Visual Studio, Unity Game Engine, Agile/Scrum
+**Proficient:** Java, C++, Object Oriented Programming, Agile/Scrum, Linux/Bash
 
-**Competent:** Linux/Bash, RDBMS/SQL, Git, C#, R, tidyverse
+**Competent:** RDBMS/SQL, Docker, PostgreSQL, Git, Visual Studio, C#
 
-**Familiar:** Docker, PostgreSQL, RStudio, GitKraken, Tableau
+**Familiar:** R, RStudio, GitKraken, Tableau, Tidyverse
 
 ## Jarvis Projects
 
@@ -17,52 +17,35 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql)]: Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database. The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs. Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active. Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java)]:
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java)]:
       
-  - Twitter App: 
-  - JDBC App: 
-  - Grep App: 
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/python_data_analytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/cloud_devops)]: Not Started
+  - Twitter App: In-progress
+  - JDBC App: In-progress
+  - Grep App: Developed an application that searches all files within a given directory for all lines that match a given pattern, writing all matches to a given output location. The application requires the user to supply three parameters. These parameters include a pattern to search for, the search directory, and the output file to store all matched lines. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests. IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory. The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub.
 
 
 ## Highlighted Projects
-**Babsketball (2021)**: Developed a text-based basketball simulation game featuring an assortment of mistake-prone players called Babduls. The program is written using C++ in Visual Studio and uses object-oriented programming.
+**Babsketball (2021)** [[GitHub](https://github.com/JoshWessel/Babsketball)]: Developed a text-based basketball simulation game featuring an assortment of mistake-prone basketball players called Babduls (the theme is based on an inside joke). This is an individual project that I continue to work on periodically. It was initially developed as a means to gain more experience and refresh my object oriented programming skills. The program is written using C++ in Visual Studio and uses object-oriented programming. GitKraken is used for source control.
 
-**Firefighter Simulator (2020)**: Developed a first-person firefighting simulator where the user controls a firefighter and must extinguish all fires in a burning building. The simulation is built in the Unity game engine and uses C# scripts.
+**Firefighter Simulator (2020)**: Developed a first-person firefighting simulator where the user controls a firefighter and must extinguish all fires in a burning building. This was an individual project developed for a final assignment in a fourth year Immersive Technology course at Ontario Tech University. The objective of the project was to develop a firefighting simulation that could theoretically be used by firefighters to decrease their stress while fighting real fires. The project aimed to accomplish this objective by focusing on the visuals and sound of the simulation. Through smoke and flames, and the roaring sound of fire, an intense virtual environment was created in which users could increase their resistance to such a stressful situation. The simulation is built in the Unity game engine and uses C# scripts. Visual Studio was used as an IDE.
 
-**Defleation (2018)**: Developed a top-down side scroller game written using C++ and the Cocos2d-x game engine in Visual Studio.
+**Gridiron (2019-2020)**: Worked in a group of eight developers to develop a hybrid 3rd Person Shooter/Real Time Strategy game over the course of my third year at Ontario Tech University. In this project, I worked as an environment artist whose primary responsibilities included 3D modelling and texturing. The project used the agile framework. We participated in daily scrums and planned weekly/bi-weekly sprints. GitKraken was used for source control.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2021-Present)**: Developed applications using languages such as bash, SQL, Java, and Python, as well as software such as Google Cloud Platform, Docker, and Java Microservices to gain experience in data engineering.
+**Software Developer, Jarvis (2021-Present)**: Developed applications using languages such as bash, SQL, and Java, as well as software such as Google Cloud Platform, IntelliJ, Maven, and Docker to gain experience in data engineering. In this position, I was also able to improve various skills, such as using git and communicating with a small team, and learn new skills such as bash CLI and Java. Used agile framework (daily scrum meetings and bi-weekly sprint retrospective meetings) to complete projects.
 
-**Environmental Intern, Sustainable Cobourg (2018-2019 (Summers))**: Summer position as an environmental intern working for Sustainable Cobourg. My specific responsibilities included research, data collection, data entry, creating charts and graphs. Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions (in the second summer).
-
-**Environmental Intern, Sustainable Cobourg (2020 (Summer))**: Summer position as an environmental intern working for Hamilton Township. My specific responsibilities included research, data collection, data entry, creating charts and graphs, and survey creation. Technologies used include Google Suite, Microsoft Office, and a web-based resource called the 'PCP tool' which is used to track local GHG emissions.
+**Environmental Intern, Sustainable Cobourg / Hamilton Township (2018-2020 (Summers))**: Summer internship working for Sustainable Cobourg (2018-2019) and the Township of Hamilton (2020). My responsibilities included research, data collection, data entry, and creating charts and graphs. I also worked on survey creation for Hamilton Township. Technologies used include Google Suite, Microsoft Office, and a web-based framework that functioned as a database, in which I performed data entry (in the second and third summers). Almost all of my work was individual, allowing me the opportunity to improve my time management skills. I would be given a list of tasks and then left to myself to complete them, allowing me the opportunity to practice effective time management. The third summer was entirely remote, which allowed me to develop my remote communication skills using communication tools such as email and zoom. I was also able to use my organizational skills while working with a large number of files and folders on a daily basis.
 
 
 ## Education
 **Ontario Tech University (2017-2021)**, Bachelor of Information Technology, Game Development And Entrepreneurship
 - Ontario Tech University Entry Scholarship for averaging 90% to 95% in top 6 high school courses
 - Dean's List (2020-2021)
-- GPA: 3.05/4.0
 
 
 ## Miscellaneous
-- Received multiple certificates of high honours from St. Mary Secondary School (2014-2017)
 - Dean's List (2020-2021)
 - Rotary Club of Northumberland Sunrise Scholarship for high academic standing
-- Basketball fan
-- Playing video games
 - Developing video games
-- Maintaining a music spreadsheet

@@ -14,19 +14,24 @@ Docker provides a container in which to store the database.
 DBeaver generated the following ER Diagrams.
 The ER diagrams display the relationships between the tables. They also list the field names and data types in each table.
 
-###Customer ER Diagram
+Customer ER Diagram
+
 ![Image of Customer ER Diagram](./assets/ER_Customer.png)
 
-###Order Item ER Diagram
+Order Item ER Diagram
+
 ![Image of Order Item ER Diagram](./assets/ER_Order_Item.png)
 
-###Orders ER Diagram
+Orders ER Diagram
+
 ![Image of Orders ER Diagram](./assets/ER_Orders.png)
 
-###Product ER Diagram
+Product ER Diagram
+
 ![Image of Product ER Diagram](./assets/ER_Product.png)
 
-###Salesperson ER Diagram
+Salesperson ER Diagram
+
 ![Image of Salesperson ER Diagram](./assets/ER_Salesperson.png)
 
 ## Design Patterns

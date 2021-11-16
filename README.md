@@ -19,8 +19,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java)]:
       
-  - Twitter App: In-progress
-  - JDBC App: In-progress
+  - JDBC App: Implemented a framework for interacting with a PSQL database using Data Access Objects (DAO's). The project follows the implementation provided by Frank P. Moley III in his Learning JDBC LinkedIn Learning course (https://www.linkedin.com/learning/learning-jdbc?u=107506978). The PSQL database used in this project is populated using data from the LinkedIn Learning course's exercise files. The project employs two DAO's used by an executor class to perform various operations on the database. The project is written in Java using IntelliJ. Testing involved running the code provided from the exercise files, then comparing the results with either the results shown in the videos or the expected results, given changes to the implementation. Maven cleans and packages the project. Docker provides a container in which to store the database.
   - Grep App: Developed an application that searches all files within a given directory for all lines that match a given pattern, writing all matches to a given output location. The application requires the user to supply three parameters. These parameters include a pattern to search for, the search directory, and the output file to store all matched lines. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests. IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory. The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub.
 
 

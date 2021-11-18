@@ -6,8 +6,8 @@ package ca.jrvs.practice.codingChallenge;
 public class StringToInteger {
 
   /**
-   * Big-O:
-   * Justification:
+   * Big-O: O(n)
+   * Justification: The solution uses a while loop to iterate through the characters in the string, resulting in O(n)
    */
   public int myAtoiSolution1(String s) {
     int sign = 1;

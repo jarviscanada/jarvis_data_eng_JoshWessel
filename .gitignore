@@ -12,3 +12,11 @@
 /core_java/grep/.idea/
 /core_java/jdbc/target/
 /core_java/jdbc/.idea/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+*.idea/
+*.eclipse

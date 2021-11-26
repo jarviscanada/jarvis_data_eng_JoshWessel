@@ -1,8 +1,5 @@
 package ca.jrvs.practice.codingChallenge;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * ticket: https://www.notion.so/jarvisdev/Valid-Palindrome-8193727101234f78b2f3f59f518a2203
  */

@@ -10,8 +10,8 @@ public class ValidPalindrome {
 
   /**
    * Big-O: O(n)
-   * Justification: The solution uses a for loop to loop through the characters in the string, resulting in O(n)
-   * Source(s): https://leetcode.com/problems/valid-palindrome/discuss/40029/Accepted-pretty-Java-solution(271ms)
+   * Justification: The solution uses a for loop to iterate through the characters in the string, resulting in O(n)
+   * Source: https://leetcode.com/problems/valid-palindrome/discuss/40029/Accepted-pretty-Java-solution(271ms)
    */
   public boolean validPalindromeSolution1(String string) {
     string = string.toLowerCase();
@@ -37,8 +37,8 @@ public class ValidPalindrome {
 
   /**
    * Big-O: O(n)
-   * Justification: The solution uses recursion, which will call itself n times, where n is the number of characters in the string, resulting in O(n)
-   * Source(s): https://leetcode.com/problems/valid-palindrome/discuss/391810/Java-Solutions-to-Valid-Palindrome-I-and-II-with-Explanation-(SubPalindrome-Iteration-and-Recursion)
+   * Justification: The solution uses recursion, which will call the method n times, where n is the number of characters in the string, resulting in O(n)
+   * Source: https://leetcode.com/problems/valid-palindrome/discuss/391810/Java-Solutions-to-Valid-Palindrome-I-and-II-with-Explanation-(SubPalindrome-Iteration-and-Recursion)
    */
   public boolean validPalindromeSolution2(String string) {
     string = string.toLowerCase();

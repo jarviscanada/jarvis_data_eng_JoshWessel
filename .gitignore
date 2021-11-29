@@ -21,4 +21,4 @@
 *.idea/
 *.eclipse
 */target/
-practice/target/
+/practice/target/

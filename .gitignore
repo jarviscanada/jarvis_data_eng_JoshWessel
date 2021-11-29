@@ -20,5 +20,4 @@
 *.iml
 *.idea/
 *.eclipse
-*/target/
-/practice/target/
+*/target/*

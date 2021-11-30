@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 import java.util.Objects;
 import oauth.signpost.exception.OAuthCommunicationException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
@@ -41,7 +42,8 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         + QUERY_SYM + "status" + EQUAL + tweet.getText()
         + AMPERSAND + "favorited" + EQUAL + tweet.isFavorited()
         + AMPERSAND + "retweeted" + EQUAL + tweet.isRetweeted()
-        + AMPERSAND + "coordinates" + EQUAL + tweet.getCoordinates()
+        + AMPERSAND + "long" + EQUAL + tweet.getCoordinates().getCoordinates().get(0)
+        + AMPERSAND + "lat" + EQUAL + tweet.getCoordinates().getCoordinates().get(1)
         + AMPERSAND + "entities" + EQUAL + tweet.getEntities());
   }
 

@@ -43,7 +43,7 @@ public class Tweet {
   }
 
   @JsonProperty("id")
-  public void setId(long id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
@@ -93,7 +93,7 @@ public class Tweet {
   }
 
   @JsonProperty("retweet_count")
-  public void setRetweet_count(int retweet_count) {
+  public void setRetweet_count(Integer retweet_count) {
     this.retweet_count = retweet_count;
   }
 
@@ -103,7 +103,7 @@ public class Tweet {
   }
 
   @JsonProperty("favorite_count")
-  public void setFavorite_count(int favorite_count) {
+  public void setFavorite_count(Integer favorite_count) {
     this.favorite_count = favorite_count;
   }
 
@@ -113,7 +113,7 @@ public class Tweet {
   }
 
   @JsonProperty("favorited")
-  public void setFavorited(boolean favorited) {
+  public void setFavorited(Boolean favorited) {
     this.favorited = favorited;
   }
 
@@ -123,7 +123,7 @@ public class Tweet {
   }
 
   @JsonProperty("retweeted")
-  public void setRetweeted(boolean retweeted) {
+  public void setRetweeted(Boolean retweeted) {
     this.retweeted = retweeted;
   }
 }

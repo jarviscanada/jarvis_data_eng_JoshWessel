@@ -32,17 +32,6 @@ public class TwitterDaoUnitTest {
   @InjectMocks
   TwitterDao dao;
 
-//  @Before
-//  public void setUp() throws Exception {
-//    String CONSUMER_KEY = System.getenv("consumerKey");
-//    String CONSUMER_SECRET = System.getenv("consumerSecret");
-//    String ACCESS_TOKEN = System.getenv("accessToken");
-//    String TOKEN_SECRET = System.getenv("tokenSecret");
-//
-//    mockHelper = new TwitterHttpHelper(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, TOKEN_SECRET);
-//    dao = new TwitterDao(mockHelper);
-//  }
-
   @Test
   public void create() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
     String text = "testing";

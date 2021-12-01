@@ -20,7 +20,7 @@ public class TweetUtil {
     tweet.setText(text);
     tweet.setCoordinates(coord);
     tweet.setEntities(null);
-    tweet.setFavorited(true);
+    tweet.setFavorited(false);
     tweet.setFavorite_count(0);
     tweet.setRetweeted(false);
     tweet.setRetweet_count(0);

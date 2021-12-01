@@ -11,18 +11,11 @@ import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 
-@RunWith(MockitoJUnitRunner.class)
-public class TwitterDaoTest {
+public class TwitterDaoIntTest {
 
-  @Mock
   TwitterHttpHelper httpHelper;
 
-  @InjectMocks
   TwitterDao dao;
 
   @Before
@@ -42,20 +35,19 @@ public class TwitterDaoTest {
     Double lat = 1d;
     Double lon = -1d;
     Tweet tweet = TweetUtil.buildTweet(text, lon, lat);
-
     tweet = dao.create(tweet);
     System.out.println(JsonParser.toJson(tweet, false, false));
   }
 
   @Test
   public void findById() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
-    Tweet returnedTweet = dao.findById("1465764744560844802");
+    Tweet returnedTweet = dao.findById("1466067316769185793");
     System.out.println(JsonParser.toJson(returnedTweet, false, false));
   }
 
   @Test
   public void deleteById() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, URISyntaxException, OAuthCommunicationException {
-    Tweet deletedTweet = dao.deleteById("1465764744560844802");
+    Tweet deletedTweet = dao.deleteById("1466067316769185793");
     System.out.println(JsonParser.toJson(deletedTweet, false, false));
   }
 }

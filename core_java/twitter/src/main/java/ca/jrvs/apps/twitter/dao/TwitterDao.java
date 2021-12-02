@@ -1,9 +1,12 @@
 package ca.jrvs.apps.twitter.dao;
 
+import static org.postgresql.util.URLCoder.encode;
+
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.example.JsonParser;
 import ca.jrvs.apps.twitter.example.dto.HttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
+import com.sun.jndi.toolkit.url.Uri;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
@@ -39,7 +42,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
   private URI getPostUri(Tweet tweet) throws URISyntaxException {
     return new URI(API_BASE_URI + POST_PATH
-        + QUERY_SYM + "status" + EQUAL + tweet.getText()
+        + QUERY_SYM + "status" + EQUAL + encode(tweet.getText())
         + AMPERSAND + "favorited" + EQUAL + tweet.isFavorited()
         + AMPERSAND + "retweeted" + EQUAL + tweet.isRetweeted()
         + AMPERSAND + "long" + EQUAL + tweet.getCoordinates().getCoordinates().get(0)

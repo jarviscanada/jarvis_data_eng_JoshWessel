@@ -34,7 +34,7 @@ public class TwitterDaoUnitTest {
 
   @Test
   public void create() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
-    String text = "testing";
+    String text = "testing: " + System.currentTimeMillis();
     Double lat = 1d;
     Double lon = -1d;
 

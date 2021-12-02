@@ -7,11 +7,7 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 # My Additions
-/core_java/.idea/
-/core_java/grep/target/
-/core_java/grep/.idea/
-/core_java/jdbc/target/
-/core_java/jdbc/.idea/
+*/target/**
 *.class
 *.jar
 *.war
@@ -20,4 +16,3 @@
 *.iml
 *.idea/
 *.eclipse
-/target/**

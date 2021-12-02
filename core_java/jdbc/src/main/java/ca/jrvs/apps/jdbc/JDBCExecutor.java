@@ -59,10 +59,17 @@ public class JDBCExecutor {
      //customerDAO.delete(dbCustomer.getId());
 
      // Additions to 3. Using stored procedures
-     OrderDAO orderDAO = new OrderDAO(connection);
-     List<Order> orders = orderDAO.getOrdersForCustomer(789);
-     orders.forEach(System.out::println);
+     //OrderDAO orderDAO = new OrderDAO(connection);
+     //List<Order> orders = orderDAO.getOrdersForCustomer(789);
+     //orders.forEach(System.out::println);
 
+     // Addition to 3. Ordering and limiting results
+     customerDAO.findAllSorted(20).forEach(System.out::println);
+     System.out.println("Paged");
+     for (int i = 1; i < 3; i++) {
+       System.out.println("Page number: " + i);
+       customerDAO.findAllPaged(10, i).forEach(System.out::println);
+     }
 
 
 //     customerDAO.findAllSorted(20).forEach(System.out::println);

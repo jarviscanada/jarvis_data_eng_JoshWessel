@@ -50,7 +50,7 @@ public class TwitterCLIApp {
     if (validateArgs(args)) {
       String operation = args[0].toLowerCase();
       if (Objects.equals(operation, "post")) {
-        String[] postArgs = { args[1], args[2], args[3] };
+        String[] postArgs = { args[1], args[2] };
         printTweet(controller.postTweet(postArgs));
       }
       else if (Objects.equals(operation, "show")) {
@@ -61,7 +61,7 @@ public class TwitterCLIApp {
         int numTweetsToDelete = args.length - 1;
         String[] tweetsToDelete = new String[numTweetsToDelete];
         for (int i = 0; i < numTweetsToDelete; i++) {
-          tweetsToDelete[0] = args[i + 1];
+          tweetsToDelete[i] = args[i + 1];
         }
         controller.deleteTweet(tweetsToDelete).forEach(this::printTweet);
       }
@@ -69,7 +69,7 @@ public class TwitterCLIApp {
   }
 
   public boolean validateArgs(String[] args) {
-    if (args[0].toLowerCase() != "post" && args[0].toLowerCase() != "show" && args[0].toLowerCase() != "delete") {
+    if (!args[0].equalsIgnoreCase("post")  && !args[0].equalsIgnoreCase("show") && !args[0].equalsIgnoreCase("delete")) {
       logger.error("Illegal operation. Available operations include post, show, and delete");
       return false;
     }

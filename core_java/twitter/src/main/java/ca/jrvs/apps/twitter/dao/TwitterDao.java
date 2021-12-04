@@ -20,6 +20,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
+@org.springframework.stereotype.Repository
 public class TwitterDao implements CrdDao<Tweet, String> {
 
   private static final String API_BASE_URI = "https://api.twitter.com";
@@ -34,8 +35,6 @@ public class TwitterDao implements CrdDao<Tweet, String> {
   private static final int HTTP_OK = 200;
 
   private HttpHelper httpHelper;
-
-  private JsonParser parser;
 
   @Autowired
   public TwitterDao(HttpHelper httpHelper) { this.httpHelper = httpHelper; }

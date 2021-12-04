@@ -19,14 +19,18 @@ import oauth.signpost.exception.OAuthMessageSignerException;
 import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TwitterCLIApp {
 
   private final Logger logger = LoggerFactory.getLogger(TwitterCLIApp.class);
 
   Controller controller;
 
-  TwitterCLIApp(Controller controller) { this.controller = controller; };
+  @Autowired
+  public TwitterCLIApp(Controller controller) { this.controller = controller; };
 
   public static void main(String[] args) throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
 

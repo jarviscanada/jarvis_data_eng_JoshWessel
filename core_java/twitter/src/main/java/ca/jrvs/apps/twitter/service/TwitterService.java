@@ -13,6 +13,7 @@ import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
 import org.springframework.beans.factory.annotation.Autowired;
 
+@org.springframework.stereotype.Service
 public class TwitterService implements Service {
 
   private CrdDao dao;

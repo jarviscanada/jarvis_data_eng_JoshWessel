@@ -58,8 +58,13 @@ public class TwitterCLIApp {
         printTweet(controller.postTweet(postArgs));
       }
       else if (Objects.equals(operation, "show")) {
-        String[] showArgs = { args[1] };
-        printTweet(controller.showTweet(showArgs));
+        int numFieldsToShow = args.length - 1;
+        String[] idAndFieldsToShow = new String[numFieldsToShow + 1];
+        idAndFieldsToShow[0] = args[1];
+        for (int i = 1; i < numFieldsToShow; i++) {
+          idAndFieldsToShow[i] = args[i + 1];
+        }
+        printTweet(controller.showTweet(idAndFieldsToShow));
       }
       else if (Objects.equals(operation, "delete")) {
         int numTweetsToDelete = args.length - 1;
@@ -81,8 +86,8 @@ public class TwitterCLIApp {
       logger.error("Illegal number of arguments. Correct format: post [text] [longitude] [latitude]");
       return false;
     }
-    else if (Objects.equals(args[0].toLowerCase(), "show") && args.length != 2) {
-      logger.error("Illegal number of arguments. Correct format: show [tweet_id]");
+    else if (Objects.equals(args[0].toLowerCase(), "show") && args.length < 2) {
+      logger.error("Illegal number of arguments. Correct format: show [tweet_id] [optional_field_to_show1] ...");
       return false;
     }
     else if (Objects.equals(args[0].toLowerCase(), "delete") && args.length <= 1) {

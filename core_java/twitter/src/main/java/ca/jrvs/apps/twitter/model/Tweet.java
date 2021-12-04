@@ -9,7 +9,7 @@ public class Tweet {
   @JsonProperty("created_at")
   private String created_at;
   @JsonProperty("id")
-  private long id;
+  private Long id;
   @JsonProperty("id_str")
   private String id_str;
   @JsonProperty("text")
@@ -19,13 +19,13 @@ public class Tweet {
   @JsonProperty("coordinates")
   private Coordinates coordinates;
   @JsonProperty("retweet_count")
-  private int retweet_count;
+  private Integer retweet_count;
   @JsonProperty("favorite_count")
-  private int favorite_count;
+  private Integer favorite_count;
   @JsonProperty("favorited")
-  private boolean favorited;
+  private Boolean favorited;
   @JsonProperty("retweeted")
-  private boolean retweeted;
+  private Boolean retweeted;
 
   @JsonProperty("created_at")
   public String getCreated_at() {
@@ -38,7 +38,7 @@ public class Tweet {
   }
 
   @JsonProperty("id")
-  public long getId() {
+  public Long getId() {
     return id;
   }
 
@@ -88,7 +88,7 @@ public class Tweet {
   }
 
   @JsonProperty("retweet_count")
-  public int getRetweet_count() {
+  public Integer getRetweet_count() {
     return retweet_count;
   }
 
@@ -98,7 +98,7 @@ public class Tweet {
   }
 
   @JsonProperty("favorite_count")
-  public int getFavorite_count() {
+  public Integer getFavorite_count() {
     return favorite_count;
   }
 
@@ -108,7 +108,7 @@ public class Tweet {
   }
 
   @JsonProperty("favorited")
-  public boolean isFavorited() {
+  public Boolean isFavorited() {
     return favorited;
   }
 
@@ -118,7 +118,7 @@ public class Tweet {
   }
 
   @JsonProperty("retweeted")
-  public boolean isRetweeted() {
+  public Boolean isRetweeted() {
     return retweeted;
   }
 

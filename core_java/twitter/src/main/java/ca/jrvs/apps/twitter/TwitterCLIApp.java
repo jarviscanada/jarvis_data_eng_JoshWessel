@@ -59,7 +59,7 @@ public class TwitterCLIApp {
       }
       else if (Objects.equals(operation, "show")) {
         int numFieldsToShow = args.length - 1;
-        String[] idAndFieldsToShow = new String[numFieldsToShow + 1];
+        String[] idAndFieldsToShow = new String[numFieldsToShow];
         idAndFieldsToShow[0] = args[1];
         for (int i = 1; i < numFieldsToShow; i++) {
           idAndFieldsToShow[i] = args[i + 1];

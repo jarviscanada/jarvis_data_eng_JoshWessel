@@ -46,13 +46,13 @@ public class TwitterServiceIntTest {
 
   @Test
   public void showTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
-    Tweet returnedTweet = service.showTweet("1466091596424921089", null);
+    Tweet returnedTweet = service.showTweet("1467203309882728460", null);
     System.out.println(JsonParser.toJson(returnedTweet, false, false));
   }
 
   @Test
   public void deleteTweets() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, URISyntaxException, OAuthCommunicationException {
-    String[] tweetsToDelete = {"1466075978699087876", "1466076115848638473"};
+    String[] tweetsToDelete = { "1467203309882728460" };
     service.deleteTweets(tweetsToDelete);
   }
 }

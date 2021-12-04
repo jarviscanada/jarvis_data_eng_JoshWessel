@@ -41,13 +41,13 @@ public class TwitterDaoIntTest {
 
   @Test
   public void findById() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
-    Tweet returnedTweet = dao.findById("1466067316769185793");
+    Tweet returnedTweet = dao.findById("1467203043787784195");
     System.out.println(JsonParser.toJson(returnedTweet, false, false));
   }
 
   @Test
   public void deleteById() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, URISyntaxException, OAuthCommunicationException {
-    Tweet deletedTweet = dao.deleteById("1466067316769185793");
+    Tweet deletedTweet = dao.deleteById("1467203043787784195");
     System.out.println(JsonParser.toJson(deletedTweet, false, false));
   }
 }

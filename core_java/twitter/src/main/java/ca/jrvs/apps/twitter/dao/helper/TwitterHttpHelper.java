@@ -37,7 +37,7 @@ public class TwitterHttpHelper implements HttpHelper {
    * @param accessToken
    * @param tokenSecret
    */
-  @Autowired
+  //@Autowired
   public TwitterHttpHelper(String consumerKey, String consumerSecret, String accessToken, String tokenSecret) {
     consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
     consumer.setTokenWithSecret(accessToken, tokenSecret);

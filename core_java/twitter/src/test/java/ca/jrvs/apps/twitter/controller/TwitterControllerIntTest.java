@@ -52,7 +52,7 @@ public class TwitterControllerIntTest {
 
   @Test
   public void showTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
-    String tweetID = "1466829404403904524";
+    String tweetID = "1467191412332679174";
     String[] args = { tweetID };
     Tweet tweet = twitterController.showTweet(args);
     logger.info("Tweet Info: text: " + tweet.getText() + ", coordinates: " + tweet.getCoordinates().getCoordinates().get(0) + ":" + tweet.getCoordinates().getCoordinates().get(1));
@@ -60,7 +60,7 @@ public class TwitterControllerIntTest {
 
   @Test
   public void deleteTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, URISyntaxException, OAuthCommunicationException {
-    String[] idsToDelete = { "1466845369074081799", "1466845428247375874" };
+    String[] idsToDelete = { "1467191412332679174" };
     List<Tweet> deletedTweets = twitterController.deleteTweet(idsToDelete);
     for (Tweet tweet : deletedTweets) {
       logger.info("Deleted tweet: id: " + tweet.getId_str() + ", text: " + tweet.getText());

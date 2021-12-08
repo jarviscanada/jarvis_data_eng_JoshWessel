@@ -21,14 +21,11 @@ public class SwapNumbers {
       return null;
     }
 
-    int num1 = arr[0];
-    int num2 = arr[1];
+    arr[0] = arr[0] ^ arr[1];
+    arr[1] = arr[0] ^ arr[1];
+    arr[0] = arr[0] ^ arr[1];
 
-    num1 = num1 ^ num2;
-    num2 = num1 ^ num2;
-    num1 = num1 ^ num2;
-
-    return new int[] { num1, num2 };
+    return arr;
   }
 
   /**
@@ -42,13 +39,10 @@ public class SwapNumbers {
       return null;
     }
 
-    int num1 = arr[0];
-    int num2 = arr[1];
+    arr[0] = arr[0] + arr[1];
+    arr[1] = arr[0] - arr[1];
+    arr[0] = arr[0] - arr[1];
 
-    num1 = num1 + num2;
-    num2 = num1 - num2;
-    num1 = num1 - num2;
-
-    return new int[] { num1, num2 };
+    return arr;
   }
 }

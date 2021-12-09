@@ -14,8 +14,8 @@ public class ValidParentheses {
    * Justification: The solution uses a for loop to iterate through all characters in the String, resulting in O(n)
    * Sources: https://leetcode.com/problems/valid-parentheses/discuss/9178/Short-java-solution, https://leetcode.com/problems/valid-parentheses/discuss/747621/Java-stack-and-hash-map-solution
    */
-  public boolean isValid(String s) {
-    if ((s.length() & 1) != 0) {
+  public boolean isValid(String string) {
+    if ((string.length() & 1) != 0) {
       return false;
     }
     Map<Character, Character> brackets = new HashMap<>();
@@ -23,11 +23,11 @@ public class ValidParentheses {
     brackets.put('[',']');
     brackets.put('{','}');
     Stack<Character> stack = new Stack<>();
-    for (int i = 0; i < s.length(); i++) {
-      if (brackets.containsKey(s.charAt(i))) {
-        stack.push(s.charAt(i));
+    for (int i = 0; i < string.length(); i++) {
+      if (brackets.containsKey(string.charAt(i))) {
+        stack.push(string.charAt(i));
       }
-      else if (stack.isEmpty() || brackets.get(stack.pop()) != s.charAt(i)) {
+      else if (stack.isEmpty() || brackets.get(stack.pop()) != string.charAt(i)) {
         return false;
       }
     }

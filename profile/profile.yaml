@@ -54,7 +54,12 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java"
     description:
-      #     - "Twitter App: In-progress"
+      - "Twitter App: Developed an application that allows users to post, show, and delete tweets directly from a command line.
+                      It uses HttpClient and Twitter's REST API.
+                      The user must supply various parameters, including the consumer key and secret, the access token and token secret, the Docker image, and the desired command followed by command-specific arguments.
+                      The application was written in Java, using IntelliJ as the IDE.
+                      The testing process involved trial and error tests using JUnit and Mockito to test each component.
+                      The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub."
       - "JDBC App: Implemented a framework for interacting with a PSQL database using Data Access Objects (DAO's).
                    The project employs two DAO's used by an executor class to perform various operations on the PSQL database.
                    The project was written in Java using IntelliJ.

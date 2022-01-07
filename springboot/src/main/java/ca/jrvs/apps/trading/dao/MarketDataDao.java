@@ -49,8 +49,9 @@ public class MarketDataDao implements CrudRepository<IexQuote, String> {
   private HttpClientConnectionManager httpClientConnectionManager;
 
   @Autowired
-  public MarketDataDao(HttpClientConnectionManager httpClientConnectionManager, MarketDataConfig marketDataConfig) {
-    this.httpClientConnectionManager = httpClientConnectionManager;
+  //public MarketDataDao(HttpClientConnectionManager httpClientConnectionManager, MarketDataConfig marketDataConfig) {
+  public MarketDataDao(MarketDataConfig marketDataConfig) {
+    //this.httpClientConnectionManager = httpClientConnectionManager;
     HOST = marketDataConfig.getHost();
     TOKEN = marketDataConfig.getToken();
     PATH_START = HOST + "stock/market/batch?symbols=";

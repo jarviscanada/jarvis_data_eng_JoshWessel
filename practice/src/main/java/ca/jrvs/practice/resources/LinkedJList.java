@@ -1,7 +1,5 @@
-package ca.jrvs.apps.practice;
+package ca.jrvs.practice.resources;
 
-import ca.jrvs.practice.resources.HashJMap;
-import ca.jrvs.practice.resources.JTreeSet;
 import java.util.AbstractSequentialList;
 import java.util.Collection;
 
@@ -29,11 +27,12 @@ public class LinkedJList<E> implements JList<E> {
   public boolean add(E e) {
     final Node<E> l = last;
     final Node<E> newNode = new Node<>(l, e, null);
-    last = newNode;
+    //last = newNode;
     if (l == null)
       first = newNode;
     else
       last.next = newNode;
+    last = newNode;
     size++;
     return true;
   }
@@ -135,5 +134,23 @@ public class LinkedJList<E> implements JList<E> {
     first = null;
     last = null;
     size = 0;
+  }
+
+  public void removeDuplicateNodes() {
+    if (size() >= 2) {
+      JTreeSet<Integer> set = new JTreeSet<>();
+      Node<E> prev = null;
+      Node<E> temp = first;
+      while (temp != null) {
+        if (!set.add((Integer)temp.item)) {
+          prev.next = temp.next;
+          size--;
+        }
+        else {
+          prev = temp;
+        }
+        temp = temp.next;
+      }
+    }
   }
 }

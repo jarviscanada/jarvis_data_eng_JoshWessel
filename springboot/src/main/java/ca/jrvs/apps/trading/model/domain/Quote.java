@@ -9,6 +9,19 @@ public class Quote implements Entity<String> {
   private Double askPrice;
   private Integer askSize;
 
+  public Quote() {
+
+  }
+
+  public Quote(String ticker, Double lastPrice, Double bidPrice, Integer bidSize, Double askPrice, Integer askSize) {
+    this.ticker = ticker;
+    this.lastPrice = lastPrice;
+    this.bidPrice = bidPrice;
+    this.bidSize = bidSize;
+    this.askPrice = askPrice;
+    this.askSize = askSize;
+  }
+
   @Override
   public String getTicker() {
     return ticker;
@@ -57,5 +70,15 @@ public class Quote implements Entity<String> {
 
   public void setAskSize(Integer askSize) {
     this.askSize = askSize;
+  }
+
+  @Override
+  public String toString() {
+    return "Quote: T: " + getTicker() +
+        ", LP: " + getLastPrice() +
+        ", BP: " + getBidPrice() +
+        ", BS: " + getBidSize() +
+        ", AP: " + getAskPrice() +
+        ", AS: " + getAskSize();
   }
 }

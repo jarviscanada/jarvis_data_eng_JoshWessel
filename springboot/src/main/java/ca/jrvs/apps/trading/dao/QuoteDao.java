@@ -43,7 +43,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
   @Override
   public Quote save(Quote quote) {
     boolean quoteExists = existsById(quote.getTicker());
-    logger.info("Quote Ticker exists: " + quoteExists);
+    logger.info("Quote Ticker " + quote.getTicker() + " exists: " + quoteExists);
     if (quoteExists) {
       int updateRowNo = updateOne(quote);
       logger.info("Row Updated: " + updateRowNo);
@@ -148,7 +148,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
    * @throws DataAccessException if failed to update
    */
   @Override
-  public Iterable<Quote> findAll() {
+  public List<Quote> findAll() {
     String selectSql = "SELECT * FROM " + TABLE_NAME;
     List<Quote> quotes = jdbcTemplate.query(selectSql, BeanPropertyRowMapper.newInstance(Quote.class));
     if (quotes == null) {
@@ -175,7 +175,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
       throw new IllegalArgumentException("Ticker cannot be null");
     }
     String deleteSql = "DELETE FROM " + TABLE_NAME + " WHERE " + ID_COLUMN_NAME + " = '" + ticker + "'";
-    jdbcTemplate.update(deleteSql, ticker);
+    jdbcTemplate.update(deleteSql);
   }
 
   @Override
@@ -190,7 +190,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
 
   @Override
   public void deleteAll() {
-    String deleteSql = "DELETE * FROM " + TABLE_NAME;
+    String deleteSql = "DELETE FROM " + TABLE_NAME;
     jdbcTemplate.update(deleteSql);
   }
 }

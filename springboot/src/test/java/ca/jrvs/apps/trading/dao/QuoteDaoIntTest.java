@@ -20,21 +20,29 @@ public class QuoteDaoIntTest {
 
   private Quote savedQuote;
 
-  //@Before
-  @Test
+  @Before
+  //@Test
   public void insertOne() {
     savedQuote = new Quote();
     savedQuote.setAskPrice(10d);
     savedQuote.setAskSize(10);
     savedQuote.setBidPrice(10.2d);
-    savedQuote.setBidSize(50);
-    savedQuote.setTicker("K");
+    savedQuote.setBidSize(80);
+    savedQuote.setTicker("O");
     savedQuote.setLastPrice(10.1d);
     quoteDao.save(savedQuote);
   }
 
-  //@After
+  @After
+  //@Test
   public void deleteOne() {
-    //quoteDao.deleteById(savedQuote.getTicker());
+    savedQuote = new Quote();
+    savedQuote.setTicker("N");
+    quoteDao.deleteById(savedQuote.getTicker());
+  }
+
+  @Test
+  public void quoteDaoTest() {
+
   }
 }

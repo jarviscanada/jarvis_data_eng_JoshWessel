@@ -56,4 +56,14 @@ public class IexQuote {
   public void setSymbol(String symbol) {
     this.symbol = symbol;
   }
+
+  @Override
+  public String toString() {
+    return "IexQuote: T: " + getSymbol() +
+        ", LP: " + getLatestPrice() +
+        ", BP: " + getIexBidPrice() +
+        ", BS: " + getIexBidSize() +
+        ", AP: " + getIexAskPrice() +
+        ", AS: " + getIexAskSize();
+  }
 }

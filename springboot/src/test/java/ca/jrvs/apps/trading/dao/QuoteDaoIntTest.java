@@ -20,7 +20,7 @@ public class QuoteDaoIntTest {
 
   private Quote savedQuote;
 
-  @Before
+  //@Before
   @Test
   public void insertOne() {
     savedQuote = new Quote();
@@ -28,12 +28,12 @@ public class QuoteDaoIntTest {
     savedQuote.setAskSize(10);
     savedQuote.setBidPrice(10.2d);
     savedQuote.setBidSize(50);
-    savedQuote.setTicker("C");
+    savedQuote.setTicker("K");
     savedQuote.setLastPrice(10.1d);
     quoteDao.save(savedQuote);
   }
 
-  @After
+  //@After
   public void deleteOne() {
     //quoteDao.deleteById(savedQuote.getTicker());
   }

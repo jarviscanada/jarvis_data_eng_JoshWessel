@@ -42,8 +42,11 @@ public class QuoteDao implements CrudRepository<Quote, String> {
    */
   @Override
   public Quote save(Quote quote) {
-    if (existsById(quote.getTicker())) {
+    boolean quoteExists = existsById(quote.getTicker());
+    logger.info("Quote Ticker exists: " + quoteExists);
+    if (quoteExists) {
       int updateRowNo = updateOne(quote);
+      logger.info("Row Updated: " + updateRowNo);
       if (updateRowNo != 1) {
         throw new DataRetrievalFailureException("Unable to update quote");
       }
@@ -88,7 +91,8 @@ public class QuoteDao implements CrudRepository<Quote, String> {
     array[2] = quote.getBidSize();
     array[3] = quote.getAskPrice();
     array[4] = quote.getAskSize();
-    array[5] = "'" + quote.getTicker() + "'";
+    //array[5] = "'" + quote.getTicker() + "'";
+    array[5] = quote.getTicker();
     logger.info("Quote array: " + Arrays.toString(array));
     return array;
   }
@@ -133,6 +137,9 @@ public class QuoteDao implements CrudRepository<Quote, String> {
     }
     String selectSql = "SELECT COUNT(*) FROM " + TABLE_NAME + " WHERE " + ID_COLUMN_NAME + " = '" + ticker + "'";
     Integer count = jdbcTemplate.queryForObject(selectSql, Integer.class);
+    if (count == null) {
+      return false;
+    }
     return count > 0;
   }
 

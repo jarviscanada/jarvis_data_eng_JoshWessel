@@ -45,7 +45,12 @@ class QuoteServiceIntTest {
     Quote quoteBefore = quoteDao.findById(ticker).get();
     logger.info(quoteBefore.toString());
 
-    quoteService.updateMarketData();
+    List<Quote> quotes = quoteService.updateMarketData();
+    int i = 0;
+    for (Quote quote : quotes) {
+      logger.info("quotes[" + i + "]: " + quote.toString());
+      i++;
+    }
 
     Quote quoteAfter = quoteDao.findById(ticker).get();
     logger.info(quoteAfter.toString());

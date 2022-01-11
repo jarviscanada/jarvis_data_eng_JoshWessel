@@ -23,7 +23,6 @@ public class QuoteService {
 
   @Autowired
   public QuoteService(QuoteDao quoteDao, MarketDataDao marketDataDao) {
-  //public QuoteService(MarketDataDao marketDataDao) {
     this.quoteDao = quoteDao;
     this.marketDataDao = marketDataDao;
   }
@@ -33,16 +32,17 @@ public class QuoteService {
    * - Get all quotes from the database
    * - foreach ticker get iexQuote
    * - convert iexQuote to quote entity
-   * persist quote to database
+   * - persist quote to database
    *
-   * @throws org.springframework.dao.DataAccessException if unable to retrieve data
-   * @throws IllegalArgumentException for invalid input
+   * @return saved quotes
    */
-  public void updateMarketData() {
+  public List<Quote> updateMarketData() {
     List<Quote> quotesInDB = quoteDao.findAll();
+    List<Quote> quotesToReturn = new ArrayList<>();
     for (int i = 0; i < quotesInDB.size(); i++) {
-      saveQuote(quotesInDB.get(i).getTicker());
+      quotesToReturn.add(saveQuote(quotesInDB.get(i).getTicker()));
     }
+    return quotesToReturn;
   }
 
   /**

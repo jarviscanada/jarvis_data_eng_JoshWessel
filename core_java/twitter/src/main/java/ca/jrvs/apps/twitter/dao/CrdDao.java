@@ -1,5 +1,11 @@
 package ca.jrvs.apps.twitter.dao;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import oauth.signpost.exception.OAuthCommunicationException;
+import oauth.signpost.exception.OAuthExpectationFailedException;
+import oauth.signpost.exception.OAuthMessageSignerException;
+
 public interface CrdDao<T, ID> {
 
   /**
@@ -7,19 +13,19 @@ public interface CrdDao<T, ID> {
    * @param entity entity that to be created
    * @return created entity
    */
-  T create(T entity);
+  T create(T entity) throws URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException;
 
   /**
    * Find an entity(Tweet) by its id
    * @param id entity id
    * @return Tweet entity
    */
-  T findById(ID id);
+  T findById(ID id) throws URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException;
 
   /**
    * Delete an entity(Tweet) by its ID
    * @param id of the entity to be deleted
    * @return deleted entity
    */
-  T deleteById(ID id);
+  T deleteById(ID id) throws IOException, URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, OAuthCommunicationException;
 }

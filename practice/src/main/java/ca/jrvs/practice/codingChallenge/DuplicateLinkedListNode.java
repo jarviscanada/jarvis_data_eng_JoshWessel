@@ -7,6 +7,11 @@ import ca.jrvs.practice.resources.LinkedJList;
  */
 public class DuplicateLinkedListNode {
 
+  /**
+   * Big-O: O(n)
+   * Justification: The solution uses a while loop to traverse the linked list, resulting in O(n)
+   * Source: https://leetcode.com/problems/remove-duplicates-from-sorted-list/discuss/28743/remove-duplicates-from-sortedunsorted-list-in-java
+   */
   public void removeDuplicateLinkedListNode(LinkedJList<Integer> linkedJList) {
     linkedJList.removeDuplicateNodes();
   }

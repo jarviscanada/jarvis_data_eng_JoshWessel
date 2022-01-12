@@ -136,20 +136,26 @@ public class LinkedJList<E> implements JList<E> {
     size = 0;
   }
 
+  /**
+   * Big-O: O(n)
+   * Justification: The solution uses a while loop to traverse the linked list, resulting in O(n)
+   * Source: https://leetcode.com/problems/remove-duplicates-from-sorted-list/discuss/28743/remove-duplicates-from-sortedunsorted-list-in-java
+   */
   public void removeDuplicateNodes() {
     if (size() >= 2) {
-      JTreeSet<Integer> set = new JTreeSet<>();
+      JTreeSet<E> set = new JTreeSet<>();
       Node<E> prev = null;
       Node<E> temp = first;
       while (temp != null) {
-        if (!set.add((Integer)temp.item)) {
+        if (!set.add(temp.item)) {
           prev.next = temp.next;
-          size--;
+          unlink(temp);
+          temp = prev.next;
         }
         else {
           prev = temp;
+          temp = temp.next;
         }
-        temp = temp.next;
       }
     }
   }

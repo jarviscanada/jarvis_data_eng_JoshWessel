@@ -42,8 +42,8 @@ public class QuoteDao implements CrudRepository<Quote, String> {
    */
   @Override
   public Quote save(Quote quote) {
-    boolean quoteExists = existsById(quote.getTicker());
-    logger.info("Quote Ticker " + quote.getTicker() + " exists: " + quoteExists);
+    boolean quoteExists = existsById(quote.getId());
+    logger.info("Quote Ticker " + quote.getId() + " exists: " + quoteExists);
     if (quoteExists) {
       int updateRowNo = updateOne(quote);
       logger.info("Row Updated: " + updateRowNo);
@@ -85,14 +85,12 @@ public class QuoteDao implements CrudRepository<Quote, String> {
    */
   private Object[] makeUpdateValues(Quote quote) {
     Object[] array = new Object[6];
-    //array[0] = "'" + quote.getTicker() + "'";
     array[0] = quote.getLastPrice();
     array[1] = quote.getBidPrice();
     array[2] = quote.getBidSize();
     array[3] = quote.getAskPrice();
     array[4] = quote.getAskSize();
-    //array[5] = "'" + quote.getTicker() + "'";
-    array[5] = quote.getTicker();
+    array[5] = quote.getId();
     logger.info("Quote array: " + Arrays.toString(array));
     return array;
   }
@@ -101,7 +99,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
   public <S extends Quote> List<S> saveAll(Iterable<S> iterable) {
     List<Quote> quotes = new ArrayList<>();
     for (Quote quote : iterable) {
-      if (existsById(quote.getTicker())) {
+      if (existsById(quote.getId())) {
         int updateRowNo = updateOne(quote);
         if (updateRowNo != 1) {
           throw new DataRetrievalFailureException("Unable to update quote");

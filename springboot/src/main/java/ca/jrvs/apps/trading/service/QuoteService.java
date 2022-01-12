@@ -40,7 +40,7 @@ public class QuoteService {
     List<Quote> quotesInDB = quoteDao.findAll();
     List<Quote> quotesToReturn = new ArrayList<>();
     for (int i = 0; i < quotesInDB.size(); i++) {
-      quotesToReturn.add(saveQuote(quotesInDB.get(i).getTicker()));
+      quotesToReturn.add(saveQuote(quotesInDB.get(i).getId()));
     }
     return quotesToReturn;
   }
@@ -52,7 +52,7 @@ public class QuoteService {
    */
   protected static Quote buildQuoteFromIexQuote(IexQuote iexQuote) {
     Quote quote = new Quote(null, 0.0d, 0.0d, 0, 0.0d, 0);
-    quote.setTicker(iexQuote.getSymbol());
+    quote.setId(iexQuote.getSymbol());
     quote.setLastPrice(iexQuote.getLatestPrice());
     quote.setBidPrice(iexQuote.getIexBidPrice());
     quote.setBidSize(iexQuote.getIexBidSize());

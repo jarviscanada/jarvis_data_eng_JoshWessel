@@ -12,33 +12,30 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {TestConfig.class})
-//@Sql({"classpath:schema.sql"})
+@Sql({"classpath:schema.sql"})
 public class QuoteDaoIntTest {
 
   @Autowired
   private QuoteDao quoteDao;
-
   private Quote savedQuote;
 
   @Before
-  //@Test
   public void insertOne() {
     savedQuote = new Quote();
     savedQuote.setAskPrice(10d);
     savedQuote.setAskSize(10);
     savedQuote.setBidPrice(10.2d);
     savedQuote.setBidSize(80);
-    savedQuote.setTicker("O");
+    savedQuote.setId("AAPL");
     savedQuote.setLastPrice(10.1d);
     quoteDao.save(savedQuote);
   }
 
   @After
-  //@Test
   public void deleteOne() {
-    savedQuote = new Quote();
-    savedQuote.setTicker("N");
-    quoteDao.deleteById(savedQuote.getTicker());
+    //savedQuote = new Quote();
+    //savedQuote.setId("N");
+    //quoteDao.deleteById(savedQuote.getId());
   }
 
   @Test

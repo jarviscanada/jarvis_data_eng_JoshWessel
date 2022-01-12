@@ -23,11 +23,19 @@ public class Quote implements Entity<String> {
   }
 
   @Override
-  public String getTicker() {
+  public String getId() {
     return ticker;
   }
 
   @Override
+  public void setId(String ticker) {
+    this.ticker = ticker;
+  }
+
+  public String getTicker() {
+    return ticker;
+  }
+
   public void setTicker(String ticker) {
     this.ticker = ticker;
   }
@@ -74,7 +82,7 @@ public class Quote implements Entity<String> {
 
   @Override
   public String toString() {
-    return "Quote: T: " + getTicker() +
+    return "Quote: T: " + getId() +
         ", LP: " + getLastPrice() +
         ", BP: " + getBidPrice() +
         ", BS: " + getBidSize() +

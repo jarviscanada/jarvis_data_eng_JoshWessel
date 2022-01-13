@@ -74,6 +74,23 @@ public class AccountDao extends JdbcCrudDao<Account> {
     return array;
   }
 
+  public int updateAmountById(Integer id, Double fund, boolean deposit) {
+    String query_sql = "SELECT amount FROM account WHERE " + getIdColumnName() + "=" + id;
+    Double existingAmount = getJdbcTemplate().queryForObject(query_sql, Double.class);
+    Double newAmount = existingAmount;
+    if (deposit) {
+      newAmount += fund;
+    }
+    else {
+      if (fund > existingAmount) {
+        throw new IllegalArgumentException("Insufficient funds");
+      }
+      newAmount -= fund;
+    }
+    String update_sql = "UPDATE account SET amount=" + newAmount + " WHERE " + getIdColumnName() + "=" + id;
+    return getJdbcTemplate().update(update_sql);
+  }
+
   @Override
   public <S extends Account> Iterable<S> saveAll(Iterable<S> iterable) {
     throw new UnsupportedOperationException("Not implemented");

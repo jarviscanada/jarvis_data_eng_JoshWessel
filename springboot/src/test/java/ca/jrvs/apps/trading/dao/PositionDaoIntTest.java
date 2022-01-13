@@ -2,12 +2,9 @@ package ca.jrvs.apps.trading.dao;
 
 import static org.junit.Assert.assertEquals;
 
-import ca.jrvs.apps.trading.model.domain.Account;
 import ca.jrvs.apps.trading.model.domain.Position;
 import java.util.List;
 import org.assertj.core.util.Lists;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +19,6 @@ public class PositionDaoIntTest {
 
   @Autowired
   private PositionDao positionDao;
-  private Position position;
 
   @Test
   public void findAllById() {

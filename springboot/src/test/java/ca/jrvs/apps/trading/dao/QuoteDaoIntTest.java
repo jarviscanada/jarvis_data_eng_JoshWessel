@@ -33,9 +33,9 @@ public class QuoteDaoIntTest {
 
   @After
   public void deleteOne() {
-    //savedQuote = new Quote();
-    //savedQuote.setId("N");
-    //quoteDao.deleteById(savedQuote.getId());
+//    savedQuote = new Quote();
+//    savedQuote.setId("AAPL");
+    quoteDao.deleteById(savedQuote.getId());
   }
 
   @Test

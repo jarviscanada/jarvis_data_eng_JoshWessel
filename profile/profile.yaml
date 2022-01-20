@@ -30,6 +30,7 @@ skills:
     - RDBMS/SQL
     - Docker
     - PostgreSQL
+    - Springboot
     - Git
     - Visual Studio
     - C#
@@ -44,7 +45,7 @@ skills:
 # List of Jarvis projects
 jarvis_projects:
   - name: "Cluster Monitor"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql"
+    git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database.
@@ -52,7 +53,7 @@ jarvis_projects:
                   Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active.
                   Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database."
   - name: "Core Java Apps"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java"
+    git_url: "/core_java"
     description:
       - "Twitter App: Developed an application that allows users to post, show, and delete tweets directly from a command line.
                       It uses HttpClient and Twitter's REST API.
@@ -71,9 +72,15 @@ jarvis_projects:
                    The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests.
                    IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory.
                    The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub."
-#  - name: "Springboot App"
-#    git_url: "/springboot"
-#    description: ""
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: "Developed a trading application framework that allows users to manage traders and tickers.
+                  It simulates a small stock exchange and allows users to create and delete traders.
+                  It also allows users to add tickers and update existing tickers to match real-world quote data from the IEX Cloud.
+                  The application is accessible through the command line or a REST API due to the Tomcat webservlet.
+                  The application was written in Java, using IntelliJ as the IDE.
+                  The testing process involved a series of trial and error tests using JUnit to test the individual components.
+                  The application was cleaned and packaged using Maven and deployed using Docker."
 #  - name: "Python Data Analytics"
 #    git_url: "/python_data_analytics"
 #    description: ""

@@ -30,7 +30,7 @@
   "jarvis_projects": [
     {
       "description": "Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database. The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs. Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active. Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql",
+      "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
@@ -39,8 +39,13 @@
         "JDBC App: Implemented a framework for interacting with a PSQL database using Data Access Objects (DAO's). The project employs two DAO's used by an executor class to perform various operations on the PSQL database. The project was written in Java using IntelliJ. Testing involved trial and error tests to ensure the code produced the expected result. IntelliJ's debugger served as a valuable resource for detecting errors. Maven cleaned and packaged the project. Docker provided a container in which to store the database.",
         "Grep App: Developed an application that searches all files within a given directory for all lines that match a given pattern, writing all matches to a given output location. The application requires the user to supply three parameters. These parameters include a pattern to search for, the search directory, and the output file to store all matched lines. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests. IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory. The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub."
       ],
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java",
+      "git_url": "/core_java",
       "name": "Core Java Apps"
+    },
+    {
+      "description": "Developed a trading application framework that allows users to manage traders and tickers. It simulates a small stock exchange and allows users to create and delete traders. It also allows users to add tickers and update existing tickers to match real-world quote data from the IEX Cloud. The application is accessible through the command line or a REST API due to the Tomcat webservlet. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests using JUnit to test the individual components. The application was cleaned and packaged using Maven and deployed using Docker.",
+      "git_url": "/springboot",
+      "name": "Springboot App"
     }
   ],
   "name": "Josh Wessel",
@@ -78,6 +83,7 @@
       "RDBMS/SQL",
       "Docker",
       "PostgreSQL",
+      "Springboot",
       "Git",
       "Visual Studio",
       "C#"

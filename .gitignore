@@ -16,3 +16,13 @@
 *.iml
 *.idea/
 *.eclipse
+# Python Project Additions
+*/.cache/**
+*/.config/**
+*/.ipynb_checkpoints/**
+*/.ipython/**
+*/.jupyter/**
+*/.local/**
+*/.npm/**
+*/python_data_analytics/data/**
+*/python_data_analytics/Practice.ipynb

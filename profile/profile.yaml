@@ -30,12 +30,14 @@ skills:
     - RDBMS/SQL
     - Docker
     - PostgreSQL
+    - Python/Jupyter Notebook
+    - Pandas/NumPy
     - Springboot
     - Git
     - Visual Studio
-    - C#
   # At least 5 skills
   familiar:
+    - C#
     - R
     - RStudio
     - GitKraken
@@ -81,9 +83,14 @@ jarvis_projects:
                   The application was written in Java, using IntelliJ as the IDE.
                   The testing process involved a series of trial and error tests using JUnit to test the individual components.
                   The application was cleaned and packaged using Maven and deployed using Docker."
-#  - name: "Python Data Analytics"
-#    git_url: "/python_data_analytics"
-#    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_analytics"
+    description: "Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies.
+                  The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments.
+                  These results provide the necessary information to identify targeted marketing campaigns for each of the three segments.
+                  The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib.
+                  The testing process involved a series of trial and error tests.
+                  A pair of Docker containers provide environments for the PSQL database (which stores the dataset) and Jupyter Notebook. The containers communicate using a Docker network."
 #  - name: "Hadoop"
 #    git_url: "/hadoop"
 #    description: ""

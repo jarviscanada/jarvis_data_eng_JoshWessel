@@ -6,26 +6,22 @@ I graduated from Ontario Tech University with a Bachelor's Degree in Information
 
 **Proficient:** Java, C++, Object Oriented Programming, Agile/Scrum, Linux/Bash
 
-**Competent:** RDBMS/SQL, Docker, PostgreSQL, Python/Jupyter Notebook, Pandas/NumPy, Springboot, Git, Visual Studio
+**Competent:** RDBMS/SQL, Docker, PostgreSQL, Git, Visual Studio, C#
 
-**Familiar:** C#, R, RStudio, GitKraken, Tableau, Tidyverse
+**Familiar:** R, RStudio, GitKraken, Tableau, Tidyverse
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JoshWessel](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql)]: Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database. The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs. Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active. Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql)]: Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database. The system is built on Linux using SQL and bash scripts. Docker is used to create and manage the container in which the system runs. Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active. Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java)]:
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java)]:
 
 - Twitter App: Developed an application that allows users to post, show, and delete tweets directly from a command line. It uses HttpClient and Twitter's REST API. The user must supply various parameters, including the consumer key and secret, the access token and token secret, the Docker image, and the desired command followed by command-specific arguments. The application was written in Java, using IntelliJ as the IDE. The testing process involved trial and error tests using JUnit and Mockito to test each component. The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub.
 - JDBC App: Implemented a framework for interacting with a PSQL database using Data Access Objects (DAO's). The project employs two DAO's used by an executor class to perform various operations on the PSQL database. The project was written in Java using IntelliJ. Testing involved trial and error tests to ensure the code produced the expected result. IntelliJ's debugger served as a valuable resource for detecting errors. Maven cleaned and packaged the project. Docker provided a container in which to store the database.
 - Grep App: Developed an application that searches all files within a given directory for all lines that match a given pattern, writing all matches to a given output location. The application requires the user to supply three parameters. These parameters include a pattern to search for, the search directory, and the output file to store all matched lines. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests. IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory. The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/springboot)]: Developed a trading application framework that allows users to manage traders and tickers. It simulates a small stock exchange and allows users to create and delete traders. It also allows users to add tickers and update existing tickers to match real-world quote data from the IEX Cloud. The application is accessible through the command line or a REST API due to the Tomcat webservlet. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests using JUnit to test the individual components. The application was cleaned and packaged using Maven and deployed using Docker.
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/python_data_analytics)]: Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies. The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments. These results provide the necessary information to identify targeted marketing campaigns for each of the three segments. The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib. A PSQL database stores the dataset, and the Jupyter Notebook accesses the data from the PSQL database. The testing process involved a series of trial and error tests. A pair of Docker containers provide environments for the PSQL database and Jupyter Notebook. The containers communicate using a Docker network.
 
 
 ## Highlighted Projects

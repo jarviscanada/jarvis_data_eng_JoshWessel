@@ -12,6 +12,7 @@ The result of the project included the segmentation of the customers in the data
 It also included recommended marketing strategies for the three most populated segments.
 These results can provide the necessary data to develop targeted marketing campaigns for each of the three segments.
 The project was written in Python using a Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib.
+A PSQL database stores the dataset, and the Jupyter Notebook accesses the data from the PSQL database.
 The testing process involved many trial and error tests throughout the project's development.
 The deployment of the application used two Docker containers to contain the Jupyter Notebook and PSQL database.
 A Docker network allows the containers to communicate.

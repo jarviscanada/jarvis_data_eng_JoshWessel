@@ -48,7 +48,7 @@
       "name": "Springboot App"
     },
     {
-      "description": "Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies. The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments. These results provide the necessary information to identify targeted marketing campaigns for each of the three segments. The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib. The testing process involved a series of trial and error tests. A pair of Docker containers provide environments for the PSQL database (which stores the dataset) and Jupyter Notebook. The containers communicate using a Docker network.",
+      "description": "Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies. The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments. These results provide the necessary information to identify targeted marketing campaigns for each of the three segments. The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib. A PSQL database stores the dataset, and the Jupyter Notebook accesses the data from the PSQL database. The testing process involved a series of trial and error tests. A pair of Docker containers provide environments for the PSQL database and Jupyter Notebook. The containers communicate using a Docker network.",
       "git_url": "/python_data_analytics",
       "name": "Python Data Analytics"
     }

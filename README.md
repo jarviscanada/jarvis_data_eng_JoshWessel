@@ -6,7 +6,7 @@ I graduated from Ontario Tech University with a Bachelor's Degree in Information
 
 **Proficient:** Java, C++, Object Oriented Programming, Agile/Scrum, Linux/Bash
 
-**Competent:** RDBMS/SQL, Docker, PostgreSQL, Python/Jupyter Notebook, Pandas/NumPy, Springboot, Git, Visual Studio
+**Competent:** Git, RDBMS/SQL, Docker, PostgreSQL, Python/Jupyter Notebook, Pandas/NumPy, Hadoop/Hive, Zeppelin Notebook, Springboot, Visual Studio
 
 **Familiar:** C#, R, RStudio, GitKraken, Tableau, Tidyverse
 
@@ -26,6 +26,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/springboot)]: Developed a trading application framework that allows users to manage traders and tickers. It simulates a small stock exchange and allows users to create and delete traders. It also allows users to add tickers and update existing tickers to match real-world quote data from the IEX Cloud. The application is accessible through the command line or a REST API due to the Tomcat webservlet. The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests using JUnit to test the individual components. The application was cleaned and packaged using Maven and deployed using Docker.
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/python_data_analytics)]: Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies. The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments. These results provide the necessary information to identify targeted marketing campaigns for each of the three segments. The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib. A PSQL database stores the dataset, and the Jupyter Notebook accesses the data from the PSQL database. The testing process involved a series of trial and error tests. A pair of Docker containers provide environments for the PSQL database and Jupyter Notebook. The containers communicate using a Docker network.
+
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/hadoop)]: Addressed business problems on a big data dataset using Hadoop, Hive, and a Zeppelin Notebook. The Hadoop cluster included a master node and two worker nodes. Google Storage initially stored the dataset before later being contained in the Hadoop Distributed File System (HDFS). The Zeppelin Notebook contained the HQL queries used to address the business problems. Ultimately, the notebook addressed each of the nine business problems. The testing process involved trial and error tests for each cell in the notebook. The project's deployment used Google Cloud Platform to provision the master and worker nodes.
 
 
 ## Highlighted Projects

@@ -1,12 +1,12 @@
 # Josh Wessel . Jarvis Consulting
 
-I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship. During my time at university, I learned languages such as C++, C#, and R, using IDE's such as Visual Studio and RStudio. My educational background introduced me to object-oriented programming, user research, algorithms & data structures, and many other technical concepts. I used source control tools such as Git, GitHub, and GitKraken, and other collaboration tools such as Discord & Trello. I was also given the opportunity to use the agile framework in the form of daily scrum meetings. For the three summers from 2018-2020, I worked as a summer intern for Sustainable Cobourg (2018, 2019) and the Township of Hamilton (2020). My responsibilities included research, data collection, data entry, and data visualization. These summer positions also provided opportunities for me to develop my organization, communication, and time management skills. I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry.
+I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship. During my time at university, I mainly worked with C++, C#, and R, using IDEs such as Visual Studio and RStudio. My educational background introduced me to object-oriented programming, user research, algorithms & data structures, and many other technical concepts. I have experience with source control tools such as Git, GitHub, and GitKraken, and other collaboration tools such as Slack, Discord, Notion, and Trello. I have also worked on projects using the agile framework during my education and training with Jarvis. For the three summers from 2018-2020, I performed research during internships with Sustainable Cobourg (2018, 2019) and the Township of Hamilton (2020). My responsibilities included research, data collection, data entry, and data visualization. These positions also provided opportunities for me to develop my organization, communication, and time management skills. I am passionate about collecting and organizing data. I am interested in pursuing a career in the data industry.
 
 ## Skills
 
-**Proficient:** Java, C++, Object Oriented Programming, Agile/Scrum, Linux/Bash
+**Proficient:** Java, C++, SQL, Python/Pandas/NumPy, RDBMS, Object Oriented Programming, Agile/Scrum, Linux/Bash
 
-**Competent:** Git, RDBMS/SQL, Docker, PostgreSQL, Python/Jupyter Notebook, Pandas/NumPy, Hadoop/Hive, Zeppelin Notebook, Springboot, Visual Studio
+**Competent:** Git, Docker, Hadoop/Hive, Zeppelin Notebook, Springboot, Visual Studio
 
 **Familiar:** C#, R, RStudio, GitKraken, Tableau, Tidyverse
 

@@ -6,14 +6,14 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
 summary: "I graduated from Ontario Tech University with a Bachelor's Degree in Information Technology, majoring in Game Development and Entrepreneurship.
-          During my time at university, I learned languages such as C++, C#, and R, using IDE's such as Visual Studio and RStudio.
+          During my time at university, I mainly worked with C++, C#, and R, using IDEs such as Visual Studio and RStudio.
           My educational background introduced me to object-oriented programming, user research, algorithms & data structures, and many other technical concepts.
-          I used source control tools such as Git, GitHub, and GitKraken, and other collaboration tools such as Discord & Trello.
-          I was also given the opportunity to use the agile framework in the form of daily scrum meetings.
-          For the three summers from 2018-2020, I worked as a summer intern for Sustainable Cobourg (2018, 2019) and the Township of Hamilton (2020).
+          I have experience with source control tools such as Git, GitHub, and GitKraken, and other collaboration tools such as Slack, Discord, Notion, and Trello.
+          I have also worked on projects using the agile framework during my education and training with Jarvis.
+          For the three summers from 2018-2020, I performed research during internships with Sustainable Cobourg (2018, 2019) and the Township of Hamilton (2020).
           My responsibilities included research, data collection, data entry, and data visualization.
-          These summer positions also provided opportunities for me to develop my organization, communication, and time management skills.
-          I am passionate about collecting and organizing data. As a result, I am interested in pursuing a career in the data industry."
+          These positions also provided opportunities for me to develop my organization, communication, and time management skills.
+          I am passionate about collecting and organizing data. I am interested in pursuing a career in the data industry."
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -22,19 +22,23 @@ skills:
   proficient:
     - Java
     - C++
+    - SQL
+    - Python/Pandas/NumPy
+    - RDBMS
     - Object Oriented Programming
     - Agile/Scrum
     - Linux/Bash
   # At least 5 skills
   competent:
-    - RDBMS/SQL
-    - Docker
-    - PostgreSQL
     - Git
+    - Docker
+    - Hadoop/Hive
+    - Zeppelin Notebook
+    - Springboot
     - Visual Studio
-    - C#
   # At least 5 skills
   familiar:
+    - C#
     - R
     - RStudio
     - GitKraken
@@ -44,7 +48,7 @@ skills:
 # List of Jarvis projects
 jarvis_projects:
   - name: "Cluster Monitor"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/linux_sql"
+    git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Developed a system that collects hardware specifications and resource usage data from Linux hosts and sends it to a PostgreSQL database.
@@ -52,7 +56,7 @@ jarvis_projects:
                   Crontab automates the collection of usage data from the host device by running the appropriate script every minute while the system is active.
                   Finally, the queried data addresses various questions related to the hardware information and usage data in the PostgreSQL database."
   - name: "Core Java Apps"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/core_java"
+    git_url: "/core_java"
     description:
       - "Twitter App: Developed an application that allows users to post, show, and delete tweets directly from a command line.
                       It uses HttpClient and Twitter's REST API.
@@ -71,15 +75,33 @@ jarvis_projects:
                    The application was written in Java, using IntelliJ as the IDE. The testing process involved a series of trial and error tests.
                    IntelliJ's debugger was especially useful in identifying issues related to properly searching the given directory.
                    The application was cleaned and packaged using Maven and deployed using Docker. A Docker image was also built and pushed to Docker Hub."
-#  - name: "Springboot App"
-#    git_url: "/springboot"
-#    description: ""
-#  - name: "Python Data Analytics"
-#    git_url: "/python_data_analytics"
-#    description: ""
-#  - name: "Hadoop"
-#    git_url: "/hadoop"
-#    description: ""
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: "Developed a trading application framework that allows users to manage traders and tickers.
+                  It simulates a small stock exchange and allows users to create and delete traders.
+                  It also allows users to add tickers and update existing tickers to match real-world quote data from the IEX Cloud.
+                  The application is accessible through the command line or a REST API due to the Tomcat webservlet.
+                  The application was written in Java, using IntelliJ as the IDE.
+                  The testing process involved a series of trial and error tests using JUnit to test the individual components.
+                  The application was cleaned and packaged using Maven and deployed using Docker."
+  - name: "Python Data Analytics"
+    git_url: "/python_data_analytics"
+    description: "Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies.
+                  The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments.
+                  These results provide the necessary information to identify targeted marketing campaigns for each of the three segments.
+                  The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib.
+                  A PSQL database stores the dataset, and the Jupyter Notebook accesses the data from the PSQL database.
+                  The testing process involved a series of trial and error tests.
+                  A pair of Docker containers provide environments for the PSQL database and Jupyter Notebook. The containers communicate using a Docker network."
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: "Addressed business problems on a big data dataset using Hadoop, Hive, and a Zeppelin Notebook.
+                  The Hadoop cluster included a master node and two worker nodes.
+                  Google Storage initially stored the dataset before later being contained in the Hadoop Distributed File System (HDFS).
+                  The Zeppelin Notebook contained the HQL queries used to address the business problems.
+                  Ultimately, the notebook addressed each of the nine business problems.
+                  The testing process involved trial and error tests for each cell in the notebook.
+                  The project's deployment used Google Cloud Platform to provision the master and worker nodes."
 #  - name: "Spark"
 #    git_url: "/spark"
 #    description: ""

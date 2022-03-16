@@ -1,0 +1,26 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# My Additions
+*/target/**
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+*.idea/
+*.eclipse
+# Python Project Additions
+*/.cache/**
+*/.config/**
+*/.ipynb_checkpoints/**
+*/.ipython/**
+*/.jupyter/**
+*/.local/**
+*/.npm/**

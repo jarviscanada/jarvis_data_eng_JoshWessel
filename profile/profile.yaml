@@ -33,6 +33,8 @@ skills:
     - Git
     - Docker
     - Hadoop/Hive
+    - Databricks
+    - Spark/Scala
     - Zeppelin Notebook
     - Springboot
     - Visual Studio
@@ -97,14 +99,19 @@ jarvis_projects:
     git_url: "/hadoop"
     description: "Addressed business problems on a big data dataset using Hadoop, Hive, and a Zeppelin Notebook.
                   The Hadoop cluster included a master node and two worker nodes.
-                  Google Storage initially stored the dataset before later being contained in the Hadoop Distributed File System (HDFS).
+                  Google Cloud Storage initially stored the dataset before later being contained in the Hadoop Distributed File System (HDFS).
                   The Zeppelin Notebook contained the HQL queries used to address the business problems.
                   Ultimately, the notebook addressed each of the nine business problems.
                   The testing process involved trial and error tests for each cell in the notebook.
                   The project's deployment used Google Cloud Platform to provision the master and worker nodes."
-#  - name: "Spark"
-#    git_url: "/spark"
-#    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: "Addressed business problems on a pair of big data datasets using Hadoop and Spark clusters.
+                  Both clusters used a master node and two worker nodes.
+                  Google Cloud Storage stored one dataset, and Azure storage contained the other.
+                  A Zeppelin notebook in the Hadoop cluster and a Databricks notebook in the Spark cluster addressed each business problem.
+                  The testing process involved trial and error tests for each cell in the notebooks.
+                  The project's deployment used Google Cloud Platform and Azure Databricks to provision the clusters."
 #  - name: "Cloud/DevOps"
 #    git_url: "/cloud_devops"
 #    description: ""

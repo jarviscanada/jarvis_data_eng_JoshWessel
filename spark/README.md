@@ -51,7 +51,7 @@ The worker nodes each contain a Spark executor and a DBFS data node for storing 
 The notebook is attached to the cluster and interacts with the driver through the SparkContext and the Hive service.
 The driver then distributes jobs to the executors in the worker nodes.
 
-![Databricks Architecture](assets/Databricks Architecture.png)
+![Databricks Architecture](assets/Databricks%20Architecture.png)
 
 # Zeppelin and Hadoop Implementation
 ## Dataset
@@ -85,7 +85,7 @@ The worker nodes each contain a YARN node manager. They also store data using an
 The notebook is accessed through the Zeppelin UI and interacts with the YARN resource manager through the Hive service.
 The YARN resource manager then distributes work to the worker nodes.
 
-![Zeppelin Architecture](assets/Zeppelin Architecture.png)
+![Zeppelin Architecture](assets/Zeppelin%20Architecture.png)
 
 # Future Improvement
 Below are a few improvements to consider:

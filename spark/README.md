@@ -46,7 +46,13 @@ The notebook addresses the following business problems:
 
 ## Architecture
 
+The architecture of the databricks cluster includes a master node and a pair of worker nodes.
+The master node contains the Hive metastore, the SparkContext, the spark driver and the DBFS root.
+The worker nodes each contain a Spark executor and a DBFS data node which is used to store the data.
+The notebook is attached to the cluster, and interacts with the driver through the SparkContext and the Hive service.
+The driver then distributes jobs to the executors in the worker nodes.
 
+![Databricks Architecture](assets/Databricks Architecture.png)
 
 # Zeppelin and Hadoop Implementation
 ## Dataset
@@ -66,7 +72,7 @@ The schema is displayed below:
 
 ## Analytics
 
-The notebook can be found at the following link:
+The notebook can be found at the following link: [Spark Dataframe - WDI Data Analytics](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/blob/master/spark/notebook/Spark%20Dataframe%20-%20WDI%20Data%20Analytics.ipynb)
 The notebook addresses the following business problems:
 - Show historical GDP data for Canada
 - Show GDP for each country and sort by year
@@ -74,7 +80,12 @@ The notebook addresses the following business problems:
 
 ## Architecture
 
+The architecture of the Hadoop cluster used to run the Zeppelin notebook includes a master node and a pair of worker nodes.
+The master node contains the Hive metastore, the YARN resource manager, the HDFS name node, and a Zeppelin component used to run the Zeppelin notebook.
+The worker nodes each contains an HDFS data node and a YARN node manager.
+The notebook is accessed through the Zeppelin UI and interacts with the YARN resource manager through the Hive service.
 
+![Zeppelin Architecture](assets/Zeppelin Architecture.png)
 
 # Future Improvement
 Below are a few improvements to consider:

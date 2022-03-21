@@ -36,7 +36,6 @@ The schema is displayed below:
 Please use the following link to access the notebook: [Retail Data Analytics with PySpark.ipynb](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/blob/master/spark/notebook/Retail%20Data%20Analytics%20with%20PySpark.ipynb)
 The notebook addresses the following business problems:
 - Calculate the number of invoices
-  - Solution: 36969
 - Find the number of placed and canceled orders by month
 - Calculate the monthly total sales
 - Calculate the monthly sales growth as a percentage

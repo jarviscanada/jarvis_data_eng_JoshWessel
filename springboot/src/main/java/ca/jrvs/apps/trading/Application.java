@@ -38,64 +38,59 @@ public class Application implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
     logger.info("Running application...");
-    logger.info("Command: " + args[0]);
-    if (validateArgs(args)) {
-      if (Objects.equals(args[0], "trader")) {
-        logger.info("Creating trader...");
-        traderAccountController.createTrader(args[1], args[2], LocalDate.of(1990, 1, 1), "Canada",
-            "email@gmail.com");
-        logger.info("Trader created!");
-      }
-      else if (Objects.equals(args[0], "traderId")) {
-        logger.info("Deleting trader...");
-        traderAccountController.deleteTrader(Integer.valueOf(args[1]));
-        logger.info("Trader deleted!");
-      }
-      else if (Objects.equals(args[0], "deposit")) {
-        logger.info("Depositing...");
-        traderAccountController.depositFund(Integer.valueOf(args[1]), Double.valueOf(args[2]));
-        logger.info(args[2] + " deposited!");
-      }
-      else if (Objects.equals(args[0], "withdraw")) {
-        logger.info("Withdrawing...");
-        traderAccountController.withdrawFund(Integer.valueOf(args[1]), Double.valueOf(args[2]));
-        logger.info(args[2] + " withdrawn!");
-      }
+    if (args.length > 0) {
+      logger.info("Command: " + args[0]);
+      if (validateArgs(args)) {
+        if (Objects.equals(args[0], "trader")) {
+          logger.info("Creating trader...");
+          traderAccountController.createTrader(args[1], args[2], LocalDate.of(1990, 1, 1), "Canada",
+                  "email@gmail.com");
+          logger.info("Trader created!");
+        } else if (Objects.equals(args[0], "traderId")) {
+          logger.info("Deleting trader...");
+          traderAccountController.deleteTrader(Integer.valueOf(args[1]));
+          logger.info("Trader deleted!");
+        } else if (Objects.equals(args[0], "deposit")) {
+          logger.info("Depositing...");
+          traderAccountController.depositFund(Integer.valueOf(args[1]), Double.valueOf(args[2]));
+          logger.info(args[2] + " deposited!");
+        } else if (Objects.equals(args[0], "withdraw")) {
+          logger.info("Withdrawing...");
+          traderAccountController.withdrawFund(Integer.valueOf(args[1]), Double.valueOf(args[2]));
+          logger.info(args[2] + " withdrawn!");
+        } else if (Objects.equals(args[0], "ticker")) {
+          logger.info("Creating ticker...");
+          quoteController.createQuote(String.valueOf(args[1]));
+          logger.info("Ticker " + args[1] + " created!");
+        } else if (Objects.equals(args[0], "put")) {
+          logger.info("Updating ticker...");
+          quoteController.putQuote(new Quote(
+                  String.valueOf(args[1]),
+                  Double.valueOf(args[2]),
+                  Double.valueOf(args[3]),
+                  Integer.valueOf(args[4]),
+                  Double.valueOf(args[5]),
+                  Integer.valueOf(args[6])));
+          logger.info("Ticker " + args[1] + " updated!");
+        } else if (Objects.equals(args[0], "update")) {
+          logger.info("Updating market data...");
+          quoteController.updateMarketData();
+          logger.info("Market data updated!");
+        } else if (Objects.equals(args[0], "help")) {
+          logger.info("Trader Commands:");
+          logger.info("  trader [first_name] [last_name]");
+          logger.info("  traderId [id]");
+          logger.info("  deposit [id] [amount]");
+          logger.info("  withdraw [id] [amount]");
 
-      else if (Objects.equals(args[0], "ticker")) {
-        logger.info("Creating ticker...");
-        quoteController.createQuote(String.valueOf(args[1]));
-        logger.info("Ticker " + args[1] + " created!");
+          logger.info("Quote Commands:");
+          logger.info("  ticker [ticker_id]");
+          logger.info("  put [ticker_id] [last_price] [bid_price] [bid_size] [ask_price] [ask_size]");
+          logger.info("  update");
+        }
       }
-      else if (Objects.equals(args[0], "put")) {
-        logger.info("Updating ticker...");
-        quoteController.putQuote(new Quote(
-            String.valueOf(args[1]),
-            Double.valueOf(args[2]),
-            Double.valueOf(args[3]),
-            Integer.valueOf(args[4]),
-            Double.valueOf(args[5]),
-            Integer.valueOf(args[6])));
-        logger.info("Ticker " + args[1] + " updated!");
-      }
-      else if (Objects.equals(args[0], "update")) {
-        logger.info("Updating market data...");
-        quoteController.updateMarketData();
-        logger.info("Market data updated!");
-      }
-
-      else if (Objects.equals(args[0], "help")) {
-        logger.info("Trader Commands:");
-        logger.info("  trader [first_name] [last_name]");
-        logger.info("  traderId [id]");
-        logger.info("  deposit [id] [amount]");
-        logger.info("  withdraw [id] [amount]");
-
-        logger.info("Quote Commands:");
-        logger.info("  ticker [ticker_id]");
-        logger.info("  put [ticker_id] [last_price] [bid_price] [bid_size] [ask_price] [ask_size]");
-        logger.info("  update");
-      }
+    } else {
+      logger.info("No arguments found");
     }
   }
 

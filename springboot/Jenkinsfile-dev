@@ -24,7 +24,7 @@ pipeline {
         stage('Init') {
             steps {
                 dir('springboot') {
-                    sh 'az login --service-principal --username ${AZ_USER} --password ${AZ_PWD} --tenant ${AZ_TENANT} --allow-no-subscriptions'
+                    sh 'az login --service-principal --username ${AZ_USER} --password ${AZ_PWD} --tenant ${AZ_TENANT}'
                 }
             }
         }

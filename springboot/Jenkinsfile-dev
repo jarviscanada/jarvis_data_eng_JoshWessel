@@ -11,7 +11,7 @@ pipeline {
 
         // Build
         ACR_NAME='acrjarvisjoshdw9'
-        IMAGE_NAME='trading-app:${BUILD_NUMBER}'
+        IMAGE_NAME="trading-app:${BUILD_NUMBER}"
 
         // Deploy
         RESOURCE_GROUP='rg-trading-app-aks'

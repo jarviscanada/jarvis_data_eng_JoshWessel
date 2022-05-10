@@ -43,12 +43,15 @@ pipeline {
                     sh 'kubectl get all'
                 }
                 dir('cloud_devops/minikube') {
-                    sh 'kubectl delete -k ./'
                     sh 'kubectl apply -k ./'
                     sh 'kubectl get all'
                 }
                 dir('springboot') {
                     sh 'kubectl set image deployment ${DEPLOYMENT_NAME} trading=${DOCKER_REPO}/${IMAGE_NAME}'
+                    sh 'kubectl get all'
+                }
+                dir('cloud_devops/minikube') {
+                    sh 'kubectl delete -k ./'
                     sh 'kubectl get all'
                 }
             }

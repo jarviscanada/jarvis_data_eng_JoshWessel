@@ -11,13 +11,13 @@ pipeline {
 
         // Build
         ACR_NAME='acrjarvisjoshdw9'
-        IMAGE_NAME='trading-app'
+        IMAGE_NAME='trading-app:${BUILD_NUMBER}'
 
         // Deploy
         RESOURCE_GROUP='rg-trading-app-aks'
         CLUSTER_NAME='aks-trading-app'
         DOCKER_REPO='acrjarvisjoshdw9.azurecr.io'
-        DEPLOYMENT_NAME='deployment.apps/trading'
+        DEPLOYMENT_NAME='trading'
     }
 
     stages {
@@ -40,7 +40,7 @@ pipeline {
                 dir('springboot') {
                     sh 'az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP'
                     sh 'kubectl cluster-info'
-                    sh 'kubectl set image ${DEPLOYMENT_NAME} trading-app=${DOCKER_REPO}/${IMAGE_NAME}'
+                    sh 'kubectl set image ${DEPLOYMENT_NAME} trading=${DOCKER_REPO}/${IMAGE_NAME}'
                     sh 'kubectl get all'
                 }
             }

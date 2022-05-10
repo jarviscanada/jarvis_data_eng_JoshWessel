@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+
+    environment {
+        app_name = 'trading-app'
+
+        // Init
+        AZ_USER=credentials('AZ_USER_DEV')
+        AZ_PWD=credentials('AZ_PWD_DEV')
+        AZ_TENANT=credentials('AZ_TENANT_DEV')
+
+        // Build
+        ACR_NAME='acrjarvisjoshdw9'
+        IMAGE_NAME='trading-app'
+
+        // Deploy
+        RESOURCE_GROUP='rg-trading-app-aks'
+        CLUSTER_NAME='aks-trading-app'
+        DOCKER_REPO='acrjarvisjoshdw9.azurecr.io'
+        DEPLOYMENT_NAME='deployment.apps/trading'
+    }
+
+    stages {
+        stage('Init') {
+            steps {
+                sh 'az login --service-principal --username ${AZ_USER} --password ${AZ_PWD} --tenant ${AZ_TENANT}'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'az acr build --image ${IMAGE_NAME} --registry $ACR_NAME --file Dockerfile .'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP'
+                sh 'kubectl cluster-info'
+                sh 'kubectl set image ${DEPLOYMENT_NAME} trading-app=${DOCKER_REPO}/${IMAGE_NAME}'
+                sh 'kubectl get all'
+            }
+        }
+    }
+}

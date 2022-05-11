@@ -5,9 +5,9 @@ pipeline {
         app_name = 'trading-app'
 
         // Init
-        AZ_USER=credentials('AZ_USER_DEV')
-        AZ_PWD=credentials('AZ_PWD_DEV')
-        AZ_TENANT=credentials('AZ_TENANT_DEV')
+        AZ_USER=credentials('AZ_USER_PROD')
+        AZ_PWD=credentials('AZ_PWD_PROD')
+        AZ_TENANT=credentials('AZ_TENANT_PROD')
 
         // Build
         ACR_NAME='acrjarvisjoshdw9'
@@ -15,7 +15,7 @@ pipeline {
 
         // Deploy
         RESOURCE_GROUP='rg-trading-app-aks'
-        CLUSTER_NAME='aks-trading-app'
+        CLUSTER_NAME='aks-trading-app-prod'
         DOCKER_REPO='acrjarvisjoshdw9.azurecr.io'
         DEPLOYMENT_NAME='trading'
     }
@@ -42,7 +42,7 @@ pipeline {
                     sh 'kubectl cluster-info'
                     sh 'kubectl get all'
                 }
-                dir('cloud_devops/minikube') {
+                dir('cloud_devops/aks') {
                     sh 'kubectl apply -k ./'
                     sh 'kubectl get all'
                 }
@@ -50,7 +50,7 @@ pipeline {
                     sh 'kubectl set image deployment ${DEPLOYMENT_NAME} trading=${DOCKER_REPO}/${IMAGE_NAME}'
                     sh 'kubectl get all'
                 }
-                dir('cloud_devops/minikube') {
+                dir('cloud_devops/aks') {
                     sh 'kubectl delete -k ./'
                     sh 'kubectl get all'
                 }

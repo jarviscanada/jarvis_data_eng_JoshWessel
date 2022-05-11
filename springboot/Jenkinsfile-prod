@@ -42,7 +42,7 @@ pipeline {
                     sh 'kubectl cluster-info'
                     sh 'kubectl get all'
                 }
-                dir('cloud_devops/minikube') {
+                dir('cloud_devops/aks') {
                     sh 'kubectl apply -k ./'
                     sh 'kubectl get all'
                 }
@@ -50,7 +50,7 @@ pipeline {
                     sh 'kubectl set image deployment ${DEPLOYMENT_NAME} trading=${DOCKER_REPO}/${IMAGE_NAME}'
                     sh 'kubectl get all'
                 }
-                dir('cloud_devops/minikube') {
+                dir('cloud_devops/aks') {
                     sh 'kubectl delete -k ./'
                     sh 'kubectl get all'
                 }

@@ -10,6 +10,8 @@ The Cloud/DevOps project involves deploying an existing trading application to A
 Deploying the application used an Azure Kubernetes Service containing a master node and a worker node.
 The master node uses an API server for connecting with the Kubernetes API.
 The worker node contains a load balancer that distributes traffic to the pods. It also uses a pod to store the PSQL database.
+The project performed the deployment using two different deployment environments. A dev deployment preceded the final prod deployment.
+The difference between the two deployments is that the dev deployment used a demo Docker image, whereas the prod deployment used the proper Docker image.
 The project also uses a Jenkins CI/CD pipeline to automate deployment.
 A Jenkinsfile defines the three stages in the pipeline: Init, Build, and Deploy.
 The project used Azure cloud services to provision the cluster and all other services related to the project.

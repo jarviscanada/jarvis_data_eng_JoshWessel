@@ -6,9 +6,9 @@ I graduated from Ontario Tech University with a Bachelor's Degree in Information
 
 **Proficient:** Java, C++, SQL, Python/Pandas/NumPy, RDBMS, Object Oriented Programming, Agile/Scrum, Linux/Bash
 
-**Competent:** Git, Docker, Hadoop/Hive, Zeppelin Notebook, Springboot, Visual Studio
+**Competent:** Git, Docker, Hadoop/Hive, Databricks, Spark/Scala, Zeppelin Notebook, Springboot, Visual Studio
 
-**Familiar:** C#, R, RStudio, GitKraken, Tableau, Tidyverse
+**Familiar:** Kubernetes, Jenkins, C#, R, RStudio, GitKraken, Tableau, Tidyverse
 
 ## Jarvis Projects
 
@@ -27,7 +27,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JoshWessel
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/python_data_analytics)]: Performed data wrangling and analysis on a dataset of invoices to identify customer segmentation and suggest marketing strategies. The results included the segmentation of customers in the dataset. Also included are recommended marketing strategies for the three most populated segments. These results provide the necessary information to identify targeted marketing campaigns for each of the three segments. The project was written in Python using Jupyter Notebook. It used libraries such as Pandas, NumPy, and Matplotlib. A PSQL database stores the dataset, and the Jupyter Notebook accesses the data from the PSQL database. The testing process involved a series of trial and error tests. A pair of Docker containers provide environments for the PSQL database and Jupyter Notebook. The containers communicate using a Docker network.
 
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/hadoop)]: Addressed business problems on a big data dataset using Hadoop, Hive, and a Zeppelin Notebook. The Hadoop cluster included a master node and two worker nodes. Google Storage initially stored the dataset before later being contained in the Hadoop Distributed File System (HDFS). The Zeppelin Notebook contained the HQL queries used to address the business problems. Ultimately, the notebook addressed each of the nine business problems. The testing process involved trial and error tests for each cell in the notebook. The project's deployment used Google Cloud Platform to provision the master and worker nodes.
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/hadoop)]: Addressed business problems on a big data dataset using Hadoop, Hive, and a Zeppelin Notebook. The Hadoop cluster included a master node and two worker nodes. Google Cloud Storage initially stored the dataset before later being contained in the Hadoop Distributed File System (HDFS). The Zeppelin Notebook contained the HQL queries used to address the business problems. Ultimately, the notebook addressed each of the nine business problems. The testing process involved trial and error tests for each cell in the notebook. The project's deployment used Google Cloud Platform to provision the master and worker nodes.
+
+**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/spark)]: Addressed business problems on a pair of big data datasets using Hadoop and Spark clusters. Both clusters used a master node and two worker nodes. Google Cloud Storage stored one dataset, and Azure storage contained the other. A Zeppelin notebook in the Hadoop cluster and a Databricks notebook in the Spark cluster addressed each business problem. The testing process involved trial and error tests for each cell in the notebooks. The project's deployment used Google Cloud Platform and Azure Databricks to provision the clusters.
+
+**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JoshWessel/tree/master/cloud_devops)]: Deployed the existing Springboot trading application to a Kubernetes cluster using Azure cloud services. The Kubernetes cluster included a master node and a worker node. The master node controls the worker node and uses an API server to connect to the Kubernetes API. The worker node includes a load balancer and three pods. Two pods handle traffic directed by the load balancer, and the third pod stores a PSQL database. The project deployed the application using both dev and prod deployment environments. The project also used a Jenkins pipeline to automate deployment. The project used Azure cloud services to provision the cluster and all other services related to the project.
 
 
 ## Highlighted Projects

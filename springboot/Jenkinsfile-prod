@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+
+    environment {
+        app_name = 'trading-app'
+
+        // Init
+        AZ_USER=credentials('AZ_USER_PROD')
+        AZ_PWD=credentials('AZ_PWD_PROD')
+        AZ_TENANT=credentials('AZ_TENANT_PROD')
+
+        // Build
+        ACR_NAME='acrjarvisjoshdw9'
+        IMAGE_NAME="trading-app:${BUILD_NUMBER}"
+
+        // Deploy
+        RESOURCE_GROUP='rg-trading-app-aks'
+        CLUSTER_NAME='aks-trading-app-prod'
+        DOCKER_REPO='acrjarvisjoshdw9.azurecr.io'
+        DEPLOYMENT_NAME='trading'
+    }
+
+    stages {
+        stage('Init') {
+            steps {
+                dir('springboot') {
+                    sh 'az login --service-principal --username ${AZ_USER} --password ${AZ_PWD} --tenant ${AZ_TENANT}'
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('springboot') {
+                    sh 'az acr build --image ${IMAGE_NAME} --registry $ACR_NAME --file Dockerfile .'
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                dir('springboot') {
+                    sh 'az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP'
+                    sh 'kubectl cluster-info'
+                    sh 'kubectl get all'
+                }
+                dir('cloud_devops/aks') {
+                    sh 'kubectl apply -k ./'
+                    sh 'kubectl get all'
+                }
+                dir('springboot') {
+                    sh 'kubectl set image deployment ${DEPLOYMENT_NAME} trading=${DOCKER_REPO}/${IMAGE_NAME}'
+                    sh 'kubectl get all'
+                }
+                dir('cloud_devops/aks') {
+                    sh 'kubectl delete -k ./'
+                    sh 'kubectl get all'
+                }
+            }
+        }
+    }
+}
